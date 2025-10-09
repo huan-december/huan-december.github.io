@@ -1,126 +1,619 @@
-<!DOCTYPE HTML>
-<!--
-	Halcyonic 1.0 by nodethirtythree + FCT
-	http://nodethirtythree.com | @nodethirtythree
-	Released under the Creative Commons Attribution 3.0 license (nodethirtythree.com/license)
--->
-<html>
-	<head>
-		<title>Huan Wang - Computer Science Ph.D | Salesforce Research | Publications | Presentations</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Huan Wang is a computer science Ph.D graduate from Yale. Explore his research, publications, presentations, and projects. Director at Salesforce Research, Palo Alto, CA.">
-		<meta name="keywords" content="Huan Wang, computer science, Salesforce Research, Large Language Model, Large Action Model, Time Series, Reinforcement Learning">
-		<!--5grid--><script src="css/5grid/viewport.js"></script><!--[if lt IE 9]><script src="css/5grid/ie.js"></script><![endif]--><link rel="stylesheet" href="css/5grid/responsive.css" /><!--/5grid-->
-		<link rel="stylesheet" href="css/style.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/style-ie9.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Huan Wang - Computer Science Ph.D | Salesforce Research Director | AI Research | Publications</title>
+    <meta name="title" content="Huan Wang - Computer Science Ph.D | Salesforce Research Director | AI Research | Publications">
+    <meta name="description" content="Dr. Huan Wang is a Director at Salesforce Research and Computer Science Ph.D from Yale University. Leading AI research in Large Language Models, Large Action Models, and Reinforcement Learning. Explore publications, research, and musical compositions.">
+    <meta name="keywords" content="Huan Wang, computer science PhD, Salesforce Research, Director, Yale University, Large Language Model, LLM, Large Action Model, LAM, AI Agent, Reinforcement Learning, Machine Learning, Computer Vision, Daniel Spielman, John Wright, Xiaoou Tang, Shuicheng Yan, Jianzhuang Liu, AI Research, Publications, Music">
+    <meta name="author" content="Huan Wang">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://huan-december.github.io/">
+    <meta property="og:title" content="Huan Wang - Computer Science Ph.D | Salesforce Research Director">
+    <meta property="og:description" content="Dr. Huan Wang is a Director at Salesforce Research and Computer Science Ph.D from Yale University. Leading AI research in Large Language Models and Large Action Models.">
+    <meta property="og:image" content="https://huan-december.github.io/images/banner1.png">
+    <meta property="og:site_name" content="Huan Wang - Research & Music">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://huan-december.github.io/">
+    <meta property="twitter:title" content="Huan Wang - Computer Science Ph.D | Salesforce Research Director">
+    <meta property="twitter:description" content="Dr. Huan Wang is a Director at Salesforce Research and Computer Science Ph.D from Yale University. Leading AI research in Large Language Models and Large Action Models.">
+    <meta property="twitter:image" content="https://huan-december.github.io/images/banner1.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Huan Wang">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://huan-december.github.io/">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/modern-style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Huan Wang",
+        "jobTitle": "Director",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Salesforce Research",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Palo Alto",
+                "addressRegion": "CA",
+                "addressCountry": "US"
+            }
+        },
+        "alumniOf": [
+            {
+                "@type": "EducationalOrganization",
+                "name": "Yale University",
+                "department": "Computer Science"
+            },
+            {
+                "@type": "EducationalOrganization", 
+                "name": "Chinese University of Hong Kong",
+                "department": "Multimedia Lab"
+            }
+        ],
+        "knowsAbout": [
+            "Large Language Models",
+            "Large Action Models", 
+            "AI Agents",
+            "Reinforcement Learning",
+            "Machine Learning",
+            "Computer Vision",
+            "Sparse Representation",
+            "Dictionary Learning"
+        ],
+        "url": "https://huan-december.github.io/",
+        "sameAs": [
+            "https://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en"
+        ],
+        "description": "Dr. Huan Wang is a Director at Salesforce Research and Computer Science Ph.D from Yale University. Leading AI research in Large Language Models, Large Action Models, and Reinforcement Learning.",
+        "image": "https://huan-december.github.io/images/banner1.png"
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Huan Wang</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#music" class="nav-link">Music</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-		<!-- Header -->
-			<div id="header-wrapper">
-				<header id="header" class="5grid">
-					<div class="12u-first">
-					
-						<!-- Logo -->
-							<h1><a href="#">Huan's World</a></h1>
-						
-						<!-- Nav -->
-							<nav>
-								<a href="index.html">Welcome</a>
-	<!-- 							<a href="threecolumn.html">Research</a>-->
-								<a href="publication.html">Publications</a>
-								<a href="presentation.html">Presentations</a>
-								<a href="project.html">Projects</a>
-								<a href="music.html">Music</a>								
-							</nav>
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Huan Wang</h1>
+                        <p class="hero-subtitle">Director at Salesforce Research</p>
+                    <p class="hero-description">
+                            I am currently a Director at Salesforce Research in Palo Alto, CA. I received my Ph.D. in Computer Science from Yale University in 2013, where I was advised by Prof.
+                            <a href="http://cs-www.cs.yale.edu/homes/spielman/" class="hero-link">Daniel Spielman</a>. 
+                            I was also mentored by Prof. 
+                            <a href="http://www.columbia.edu/~jw2966/" class="hero-link">John Wright</a>
+                            at Columbia University.
+                            Prior to Yale, I was a member of the Multimedia Lab at the Chinese University of Hong Kong, supervised by Prof.
+                            <a href="https://www.ie.cuhk.edu.hk/people/xotang.shtml" class="hero-link">Xiaoou Tang</a>, 
+                            Prof. 
+                            <a href="https://www.ece.nus.edu.sg/stfpage/eleyans/" class="hero-link">Shuicheng Yan</a>,
+                            and Prof. 
+                            <a href="https://www.ie.cuhk.edu.hk/people/jzliu.shtml" class="hero-link">Jianzhuang Liu</a>.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en" class="btn btn-primary" rel="noopener external" aria-label="View Huan Wang's Google Scholar profile">
+                            <i class="fab fa-google-scholar" aria-hidden="true"></i> Google Scholar
+                        </a>
+                        <a href="https://www.linkedin.com/in/huanwangyale" class="btn btn-secondary" rel="noopener external" aria-label="Connect with Huan Wang on LinkedIn">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                        </a>
+                        <a href="https://x.com/huan__wang" class="btn btn-secondary" rel="noopener external" aria-label="Follow Huan Wang on Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i> Twitter
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/banner1.png" alt="Huan Wang - Director at Salesforce Research and Computer Science PhD from Yale University" class="profile-image">
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
 
-					</div>
-				</header>
-				<div id="banner">
-					<div class="5grid 5grid-alt">
-						<div class="9u-first">
-						
-							<!-- Banner Copy -->
-								<p>I graduated in 2013 as a computer science Ph.D in Yale supervised by Professor <a href="http://cs-www.cs.yale.edu/homes/spielman/"><font color="#FFFFFF">Daniel Spielman</font></a>. I was also working closely with Professor <a href="http://www.columbia.edu/~jw2966/"><font color="#FFFFFF">John Wright</font></a> in Columbia. Before that I was a member of the Multimedia Lab at the Chinese University of Hong Kong, supervised by Professor <a href="https://www.ie.cuhk.edu.hk/people/xotang.shtml"><font color="#FFFFFF">Xiaoou Tang</font></a>, Professor <a href="https://www.ece.nus.edu.sg/stfpage/eleyans/"><font color="#FFFFFF">Shuicheng Yan</font></a>, and Professor <a href="https://www.ie.cuhk.edu.hk/people/jzliu.shtml"><font color="#FFFFFF">Jianzhuang Liu</font></a>. Now I am a Director at Salesforce Research, Palo Alto, CA. </p>
-								<!-- <a href="WebContent/CV_Huan.pdf" class="button-big">CV</a> -->
-								<a href="http://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en" class="button-big">Google Scholar</a>
-								<a href="https://www.linkedin.com/in/huanwangyale" class="button-big">LinkedIn</a>
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Publication Highlights</h2>
+                <p class="section-subtitle">Full publication list can be found on <a href="https://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en" class="publication-link" rel="noopener external">Google Scholar</a>.</p>
+            </header>
+            <div class="publications-content">
+				<div class="publication-category">
+                    <h3>Large Language Model (LLM) and Large Action Model (LAM)</h3>
+					<div class="publication-item">
+                        <p><a href="https://arxiv.org/pdf/2504.03601" class="publication-link">APIGen-MT: Agentic PIpeline for Multi-Turn Data Generation via Simulated Agent-Human Interplay</a>, by Akshara Prabhakar, Zuxin Liu, Ming Zhu, Jianguo Zhang, Tulika Awalgaonkar, Shiyu Wang, Zhiwei Liu, Haolin Chen, Thai Hoang, Juan Carlos Niebles, Shelby Heinecke, Weiran Yao, Huan Wang*, Silvio Savarese*, Caiming Xiong*. NeurIPS Datasets and Benchmarks Track, 2025. <a href="https://huggingface.co/datasets/Salesforce/APIGen-MT-5k" class="github-link">[Data]</a><a href="https://huggingface.co/collections/Salesforce/xlam-2-67ef5be12949d8dcdae354c4" class="github-link">[Model]</a>, * co-corresponding authors.</p>
+                    </div>	
+					<div class="publication-item">
+                        <p><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/61cce86d180b1184949e58939c4f983d-Paper-Datasets_and_Benchmarks_Track.pdf" class="publication-link">APIGen: Automated PIpeline for Generating Verifiable and Diverse Function-Calling Datasets</a>, by Zuxin Liu, Thai Hoang, Jianguo Zhang, Ming Zhu, Tian Lan, Shirley Kokane, Juntao Tan, Weiran Yao, Zhiwei Liu, Yihao Feng, Rithesh Murthy, Liangwei Yang, Silvio Savarese, Juan Carlos Niebles, Huan Wang, Shelby Heinecke, Caiming Xiong. NeurIPS, 2024. <a href="https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k" class="github-link">[Data]</a><a href="https://huggingface.co/collections/Salesforce/xlam-models-65f00e2a0a63bbcd1c2dade4" class="github-link">[Model]</a></p>
+                    </div>	
+					<div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2409.03215" class="publication-link">xLAM: A Family of Large Action Models to Empower AI Agent Systems</a>, by Jianguo Zhang, Tian Lan, Ming Zhu, Zuxin Liu, Thai Hoang, Shirley Kokane, Weiran Yao, Juntao Tan, Akshara Prabhakar, Haolin Chen, Zhiwei Liu, Yihao Feng, Tulika Awalgaonkar, Rithesh Murthy, Eric Hu, Zeyuan Chen, Ran Xu, Juan Carlos Niebles, Shelby Heinecke, Huan Wang*, Silvio Savarese*, Caiming Xiong*. Arxiv, 2024. <a href="https://github.com/SalesforceAIResearch/xLAM" class="github-link">[Github Repo]</a>, * co-corresponding authors.</p>
+                    </div>					
+                    <div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2308.02151" class="publication-link">Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization</a>, by Weiran Yao, Shelby Heinecke, Juan Carlos Niebles, Zhiwei Liu, Yihao Feng, Le Xue, Rithesh Murthy, Zeyuan Chen, Jianguo Zhang, Devansh Arpit, Ran Xu, Phil Mui, Huan Wang*, Caiming Xiong*, Silvio Savarese*. Arxiv, 2023. <a href="https://github.com/weirayao/Retroformer" class="github-link">[Github Repo]</a>, * co-corresponding authors.</p>
+                    </div>
+					<div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2308.05960" class="publication-link">BOLAA: Benchmarking and Orchestrating LLM-augmented Autonomous Agents</a>, by Zhiwei Liu, Weiran Yao, Jianguo Zhang, Le Xue, Shelby Heinecke, Rithesh Murthy, Yihao Feng, Zeyuan Chen, Juan Carlos Niebles, Devansh Arpit, Ran Xu, Phil Mui, Huan Wang*, Caiming Xiong*, Silvio Savarese*. Arxiv, 2023. <a href="https://github.com/salesforce/BOLAA" class="github-link">[Github Repo]</a>, * co-corresponding authors.</p>
+                    </div>
+					<div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2307.08962" class="publication-link">REX: Rapid Exploration and eXploitation for AI Agents</a>, by Rithesh Murthy, Shelby Heinecke, Juan Carlos Niebles, Zhiwei Liu, Le Xue, Weiran Yao, Yihao Feng, Zeyuan Chen, Akash Gokul, Devansh Arpit, Ran Xu, Phil Mui, Huan Wang*, Caiming Xiong*, Silvio Savarese*. Arxiv, 2023. * co-corresponding authors.</p>
+                    </div>			
+                    <div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2402.15506" class="publication-link">AgentOhana: Design Unified Data and Training Pipeline for Effective Agent Learning</a>, by Jianguo Zhang, Tian Lan, Rithesh Murthy, Zhiwei Liu, Weiran Yao, Ming Zhu, Juntao Tan, Thai Hoang, Zuxin Liu, Liangwei Yang, Yihao Feng, Shirley Kokane, Tulika Awalgaonkar, Juan Carlos Niebles, Silvio Savarese, Shelby Heinecke, Huan Wang, Caiming Xiong. Arxiv, 2024. <a href="https://github.com/SalesforceAIResearch/AgentOhana" class="github-link">[Github Repo]</a></p>
+                    </div>
+                    <div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2203.13474" class="publication-link">CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis</a>, by Erik Nijkamp, Bo Pang, Hiroaki Hayashi, Lifu Tu, Huan Wang, Yingbo Zhou, Silvio Savarese, Caiming Xiong. Arxiv, 2022. <a href="https://github.com/salesforce/CodeGen" class="github-link">[Github Repo]</a></p>
+                    </div>					
+                    <button class="view-more-btn" onclick="togglePublications('llm-lam')">View More</button>
+                </div>
 
-						</div>
-						<div class="3u">
-							
-							<!-- Banner Image -->
-								<a href="#" class="bordered-feature-image"><img src="images/banner1.png" alt="" /></a>
-						
-						</div>
-						<div class="5grid-clear"></div>
-					</div>
-				</div>
-			</div>
+                <div class="publication-category">
+                    <h3>AI Agent</h3>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2402.15538" class="publication-link">AgentLite: A Lightweight Library for Building and Advancing Task-Oriented LLM Agent System</a>, by Zhiwei Liu, Weiran Yao, Jianguo Zhang, Liangwei Yang, Zuxin Liu, Juntao Tan, Prafulla K. Choubey, Tian Lan, Jason Wu, Huan Wang, Shelby Heinecke, Caiming Xiong, Silvio Savarese. Arxiv, 2024. <a href="https://github.com/SalesforceAIResearch/AgentLite" class="github-link">[Github Repo]</a></p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2408.07060" class="publication-link">Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents</a>, by Kexin Zhang, Weiran Yao, Zuxin Liu, Yihao Feng, Zhiwei Liu, Rithesh Murthy, Tian Lan, Lei Li, Renze Lou, Jiacheng Xu, Bo Pang, Yingbo Zhou, Shelby Heinecke, Silvio Savarese, Huan Wang, Caiming Xiong. Arxiv, 2024.</p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2411.02305" class="publication-link">CRMArena: Understanding the Capacity of LLM Agents to Perform Professional CRM Tasks in Realistic Environments</a>, by Kung-Hsiang Huang, Akshara Prabhakar, Sidharth Dhawan, Yixin Mao, Huan Wang, Silvio Savarese, Caiming Xiong, Philippe Laban, Chien-Sheng Wu. NAACL, 2025. <a href="https://github.com/SalesforceAIResearch/CRMArena" class="github-link">[Github Repo]</a></p>
+                    </div>
+                    <div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2406.10290" class="publication-link">MobileAIBench: Benchmarking LLMs and LMMs for On-Device Use Cases</a>, by Rithesh Murthy, Liangwei Yang, Juntao Tan, Tulika Manoj Awalgaonkar, Yilun Zhou, Shelby Heinecke, Sachin Desai, Jason Wu, Ran Xu, Sarah Tan, Jianguo Zhang, Zhiwei Liu, Shirley Kokane, Zuxin Liu, Ming Zhu, Huan Wang, Caiming Xiong, Silvio Savarese. Arxiv, 2024.</p>
+                    </div>
+                    <div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2507.12806" class="publication-link">MCPEval: Automatic MCP-based Deep Evaluation for AI Agent Models</a>, by Zhiwei Liu, Jielin Qiu, Shiyu Wang, Jianguo Zhang, Zuxin Liu, Roshan Ram, Haolin Chen, Weiran Yao, Shelby Heinecke, Silvio Savarese, Huan Wang, Caiming Xiong. Arxiv, 2025. <a href="https://github.com/SalesforceAIResearch/MCPEval" class="github-link">[Github Repo]</a></p>
+                    </div>
+                    <div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2411.13547" class="publication-link">ToolScan: A Benchmark for Characterizing Errors in Tool-Use LLMs</a>, by Shirley Kokane, Ming Zhu, Tulika Awalgaonkar, Jianguo Zhang, Thai Hoang, Akshara Prabhakar, Zuxin Liu, Tian Lan, Liangwei Yang, Juntao Tan, Rithesh Murthy, Weiran Yao, Zhiwei Liu, Juan Carlos Niebles, Huan Wang, Shelby Heinecke, Caiming Xiong, Silvio Savarese. Arxiv, 2024.</p>
+                    </div>
+                    <div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2507.22034" class="publication-link">UserBench: An Interactive Gym Environment for User-Centric Agents</a>, by Cheng Qian, Zuxin Liu, Akshara Prabhakar, Zhiwei Liu, Jianguo Zhang, Haolin Chen, Heng Ji, Weiran Yao, Shelby Heinecke, Silvio Savarese, Caiming Xiong, Huan Wang. Arxiv, 2025.</p>
+                    </div>
+                    <div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2509.09614" class="publication-link">LoCoBench: A Benchmark for Long-Context Large Language Models in Complex Software Engineering</a>, by Jielin Qiu, Zuxin Liu, Zhiwei Liu, Rithesh Murthy, Jianguo Zhang, Haolin Chen, Shiyu Wang, Ming Zhu, Liangwei Yang, Juntao Tan, Zhepeng Cen, Cheng Qian, Shelby Heinecke, Weiran Yao, Silvio Savarese, Caiming Xiong, Huan Wang. Arxiv, 2025. <a href="https://github.com/SalesforceAIResearch/LoCoBench" class="github-link">[Github Repo]</a></p>
+                    </div>
+                    <div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2506.02298" class="publication-link">LAM SIMULATOR: Advancing Data Generation for Large Action Model Training via Online Exploration and Trajectory Feedback</a>, by Thai Hoang, Kung-Hsiang Huang, Shirley Kokane, Jianguo Zhang, Zuxin Liu, Ming Zhu, Jake Grigsby, Tian Lan, Michael S Ryoo, Chien-Sheng Wu, Shelby Heinecke, Huan Wang, Silvio Savarese, Caiming Xiong, Juan Carlos Niebles. Arxiv, 2025. <a href="https://github.com/SalesforceAIResearch/LAM-SIMULATOR" class="github-link">[Github Repo]</a></p>
+                    </div>
+                    <div class="publication-item publication-hidden">
+                        <p><a href="https://arxiv.org/abs/2502.20616" class="publication-link">PersonaBench: Evaluating AI Models on Understanding Personal Information through Accessing (Synthetic) Private User Data</a>, by Juntao Tan, Liangwei Yang, Zuxin Liu, Zhiwei Liu, Rithesh Murthy, Tulika Manoj Awalgaonkar, Jianguo Zhang, Weiran Yao, Ming Zhu, Shirley Kokane, Silvio Savarese, Huan Wang, Caiming Xiong, Shelby Heinecke. ACL Findings, 2025. <a href="https://github.com/SalesforceAIResearch/PersonaBench" class="github-link">[Github Repo]</a></p>
+                    </div>
+                    <button class="view-more-btn" onclick="togglePublications('ai-agent')">View More</button>
+                </div>
 
-		<!-- Features -->
-			<div id="features-wrapper">
-				<div id="features">
-					<div class="5grid">
-							<header>
-								<h2><font size="6">Research</font></h2>
-							</header>						
-						<div class="3u-first">
-						
-   				<!-- Feature #1 -->
-								<section>
-									<a href="#" class="bordered-feature-image"><img src="images/Sparse.png" alt="" /></a>
-									<h2>Sparse Representation and Dictionary Learning</h2>
-								</section>
+                <div class="publication-category">
+                    <h3>LLM Reasoning</h3>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2411.04282" class="publication-link">Language Models are Hidden Reasoners: Unlocking Latent Reasoning Capabilities via Self-Rewarding</a>, by Haolin Chen, Yihao Feng, Zuxin Liu, Weiran Yao, Akshara Prabhakar, Shelby Heinecke, Ricky Ho, Phil Mui, Silvio Savarese, Caiming Xiong, Huan Wang. Arxiv, 2024.</p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2410.18528" class="publication-link">PRACT: Optimizing Principled Reasoning and Acting of LLM Agent</a>, by Zhiwei Liu, Weiran Yao, Jianguo Zhang, Rithesh Murthy, Liangwei Yang, Zuxin Liu, Tian Lan, Ming Zhu, Juntao Tan, Shirley Kokane, Thai Hoang, Juan Carlos Niebles, Shelby Heinecke, Huan Wang, Silvio Savarese, Caiming Xiong. SIG CoNLL, 2024.</p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2412.05479" class="publication-link">LATTE: Learning to Think with Vision Specialists</a>, by Zixian Ma, Jianguo Zhang, Zhiwei Liu, Jieyu Zhang, Juntao Tan, Manli Shu, Juan Carlos Niebles, Shelby Heinecke, Huan Wang, Caiming Xiong, Ranjay Krishna, Silvio Savarese. Arxiv, 2024.</p>
+                    </div>
+                </div>
 
-						</div>
-						
-						<div class="3u">
-							<!-- Feature #3 -->
-								<section>
-									<a href="#" class="bordered-feature-image"><img src="images/TSA.png" alt="" /></a>
-									<h2>Subspace Learning, Ranking, Semi-supervised Clustering and Regression</h2>
-								</section>	
-						</div>			
+                <div class="publication-category publication-category-hidden">
+                    <h3>Reinforcement Learning</h3>
+                    <div class="publication-item">
+                        <p><a href="https://proceedings.mlr.press/v97/wang19o.html" class="publication-link">On the Generalization Gap in Reparameterizable Reinforcement Learning</a>, by Huan Wang, Stephan Zheng, Caiming Xiong, Richard Socher. ICML, 2019.</p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://proceedings.neurips.cc/paper/2021/hash/e61eaa38aed621dd776d0e67cfeee366-Abstract.html" class="publication-link">Policy Finetuning: Bridging Sample-Efficient Offline and Online Reinforcement Learning</a>, by Tengyang Xie, Nan Jiang, Huan Wang, Caiming Xiong, Yu Bai. NeurIPS, 2021.</p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2102.11494" class="publication-link">Sample-Efficient Learning of Stackelberg Equilibria in General-Sum Games</a>, by Yu Bai, Chi Jin, Huan Wang, and Caiming Xiong. NeurIPS, 2021.</p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2108.13976" class="publication-link">WarpDrive: Extremely Fast End-to-End Deep Multi-Agent Reinforcement Learning on a GPU</a>, by Tian Lan, Sunil Srinivasa, Huan Wang, Stephan Zheng. Arxiv, 2021. <a href="https://github.com/salesforce/warp-drive" class="github-link">[Github Repo]</a></p>
+                    </div>
+                </div>
 
-						
-	<!-- 			<div class="3u">   -->
-							
-							<!-- Feature #4 -->
-	<!-- 							<section>
-									<a href="#" class="bordered-feature-image"><img src="images/TRIM.png" alt="" /></a>
-									<h2>Semi-supervised learning and Regression</h2>
-								</section>
+                <div class="publication-category publication-category-hidden">
+                    <h3>Uncertainty Estimation</h3>
+                    <div class="publication-item">
+                        <p><a href="https://proceedings.mlr.press/v202/bhatnagar23a.html" class="publication-link">Improved Online Conformal Prediction via Strongly Adaptive Online Learning</a>, by Aadyot Bhatnagar, Huan Wang, Caiming Xiong, Yu Bai. ICML, 2023.</p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2106.05515" class="publication-link">Understanding the Under-Coverage Bias in Uncertainty Estimation</a>, by Yu Bai, Song Mei, Huan Wang, Caiming Xiong. NeurIPS, 2021.</p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2102.10809" class="publication-link">Localized Calibration: Metrics and Recalibration</a>, by Rachel Luo, Aadyot Bhatnagar, Huan Wang, Caiming Xiong, Silvio Savarese, Yu Bai, Shengjia Zhao, Stefano Ermon. Arxiv, 2021.</p>
+                    </div>
+                </div>
 
-						</div>
-	 -->																						
-						<div class="3u">					
-							<!-- Feature #2 -->
-								<section>
-									<a href="#" class="bordered-feature-image"><img src="images/CP.png" alt="" /></a>
-									<h2>Image Registration, Correspondence</h2>
-								</section>
+                <div class="publication-category publication-category-hidden">
+                    <h3>Natural Language Processing</h3>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2010.12885" class="publication-link">Unsupervised Paraphrasing with Pretrained Language Models</a>, by Tong Niu, Semih Yavuz, Yingbo Zhou, Nitish Shirish Keskar, Huan Wang and Caiming Xiong. EMNLP, 2021.</p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://aclanthology.org/2021.findings-acl.434.pdf" class="publication-link">BatchMixup: Improving Training by Interpolating Hidden States of the Entire Mini-batch</a>, by Wenpeng Yin, Huan Wang, Jin Qu, Caiming Xiong. ACL.Findings, 2021.</p>
+                    </div>
+                </div>
 
-						</div>
-						
-						<div class="3u">					
-							<!-- Feature #2 -->
-								<section>
-									<a href="#" class="bordered-feature-image"><img src="images/FR.png" alt="" /></a>
-									<h2>Face Recognition</h2>
-								</section>
+                <div class="publication-category publication-category-hidden">
+                    <h3>Neural Network and Deep Learning</h3>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2106.03357" class="publication-link">Evaluating State-of-the-Art Classification Models Against Bayes Optimality</a>, by Ryan Theisen, Huan Wang, Lav R Varshney, Caiming Xiong, and Richard Socher. NeurIPS, 2021.</p>
+                    </div>
+                    <div class="publication-item">
+                        <p><a href="https://arxiv.org/abs/2012.14193" class="publication-link">Catastrophic Fisher Explosion: Early Phase Fisher Matrix Impacts Generalization</a>, by Stanislaw Jastrzebski, Devansh Arpit, Oliver Astrand, Giancarlo Kerg, Huan Wang, Caiming Xiong, Richard Socher, Kyunghyun Cho, Krzysztof Geras. ICML, 2021.</p>
+                    </div>
+                </div>
 
-						</div>						
-					</div>
-				</div>
-			</div>
+                <div class="publication-category publication-category-hidden">
+                    <h3>Sparse Representation and Dictionary Learning</h3>
+                    <div class="publication-item">
+                        <p><a href="http://jmlr.csail.mit.edu/proceedings/papers/v23/spielman12/spielman12.pdf" class="publication-link">Exact Recovery of Sparsely-Used Dictionaries</a>, by Daniel Spielman, Huan Wang, and John Wright. <span class="award">Best paper award</span> of the 25th Conference on Learning Theory (COLT), Jun.2012.</p>
+                    </div>
+                </div>
 
-	
+                <button class="view-more-categories-btn" onclick="togglePublicationCategories()">View More Topics</button>
+            </div>
+        </div>
+    </section>
+    <!-- Music Section -->
+    <section id="music" class="music">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Music</h2>
+                <p class="section-subtitle">不会写代码的研究员不是好歌手 - Original compositions and musical works</p>
+            </header>
+            <div class="music-content">
+                <div class="music-section">
+                    <h3>My Compositions (POP and NEW AGE)</h3>
+                    <div class="music-grid">
+                        <div class="music-item">
+                            <h4>最后我们还是变成了曾经讨厌的那个人</h4>
+                            <a href="https://www.youtube.com/watch?v=pfaITIVkvN0" class="btn btn-secondary">YouTube</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>好久不见</h4>
+                            <a href="WebContent/LongTimeNoSee.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>冷眼人间</h4>
+                            <a href="WebContent/ColdEye.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>流年</h4>
+                            <a href="WebContent/FleetingTime.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>暖冬</h4>
+                            <a href="WebContent/WarmWinter.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>月光回忆</h4>
+                            <a href="WebContent/月光回忆.mp3" class="btn btn-secondary">Listen</a>
+                            <a href="https://www.youtube.com/watch?v=WCx9CAWc4ks" class="btn btn-secondary">YouTube</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>桎梏</h4>
+                            <a href="WebContent/桎梏.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>生活不止眼前的苟且</h4>
+                            <a href="https://www.youtube.com/watch?v=HXyhaL_nC0M" class="btn btn-secondary">YouTube MV</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>追忆</h4>
+                            <a href="https://www.youtube.com/watch?v=G9094ppQS8M&list=PLPqgQV_7dg0x-4KtSWGJGkVbRESjuVtxg&index=1" class="btn btn-secondary">YouTube MV</a>
+                            <a href="WebContent/memory_instrument.mp3" class="btn btn-secondary">Instrumental</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>涟漪-A Ripple of Love</h4>
+                            <a href="http://v.youku.com/v_show/id_XNTEwODYzOTEy.html" class="btn btn-secondary">MV (400K+ views)</a>
+                            <a href="WebContent/ARippleofLove.mp3" class="btn btn-secondary">Song</a>
+                            <a href="WebContent/ARippleofLoveInstruments.mp3" class="btn btn-secondary">Instruments</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>错过</h4>
+                            <a href="WebContent/错过.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>我们-钢琴轻音乐</h4>
+                            <a href="WebContent/我们-钢琴轻音乐.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>流年-钢琴轻音乐</h4>
+                            <a href="WebContent/liunian.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>MEMORY</h4>
+                            <a href="WebContent/Memory.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>LILIUM (remix)</h4>
+                            <a href="WebContent/Lilium-Final.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>WAITING IN DARKNESS</h4>
+                            <a href="WebContent/WaitingInDarkness.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>LIGHT MOOD</h4>
+                            <a href="WebContent/LightMood.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                    </div>
+                </div>
 
-		<!-- Copyright -->
-			<div id="copyright">
-				(c) 2012 Huan's World. Design by <a href="http://nodethirtythree.com/">nodethirtythree</a> + <a href="http://www.freecsstemplates.org/">FCT</a>. Images by <a href="http://fotogrph.com/">Fotogrph</a>.
-			</div>
+                <div class="music-section">
+                    <h3>My Recordings / 翻唱</h3>
+                    <div class="music-grid">
+                        <div class="music-item">
+                            <h4>你是我的刘若英</h4>
+                            <a href="musicplay.html" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>剪爱</h4>
+                            <a href="WebContent/剪爱-320.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>离开你以后</h4>
+                            <a href="WebContent/TimeAfterILeftYou.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>Everything I Do</h4>
+                            <a href="WebContent/EverythingIDo.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>Season In The Sun</h4>
+                            <a href="WebContent/Seasoninthesun.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>Mandy</h4>
+                            <a href="WebContent/Mandy5-reverb.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                        <div class="music-item">
+                            <h4>啦啦歌</h4>
+                            <a href="WebContent/Lalala.mp3" class="btn btn-secondary">Listen</a>
+                        </div>
+                    </div>
+                </div>
 
-	</body>
+                <div class="music-section">
+                    <h3>YouTube Channel</h3>
+                    <div class="youtube-section">
+                        <p>Subscribe to my YouTube channel for more music content:</p>
+                        <a href="https://www.youtube.com/user/JoyousPrince/" class="btn btn-primary">
+                            <i class="fab fa-youtube"></i> JoyousPrince (@YouTube)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>181 Lytton Ave, Palo Alto, CA, 94301</p>
+                    <p>Email: <span id="email-obfuscated">huan[dot]wang[at]salesforce[dot]com</span></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <div class="footer-links">
+                        <a href="https://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en" rel="noopener external" aria-label="Google Scholar Profile">
+                            <i class="fab fa-google-scholar" aria-hidden="true"></i> Google Scholar
+                        </a>
+                        <a href="https://www.linkedin.com/in/huanwangyale" rel="noopener external" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                        </a>
+                        <a href="https://x.com/huan__wang" rel="noopener external" aria-label="Twitter Profile">
+                            <i class="fab fa-twitter" aria-hidden="true"></i> Twitter
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <div class="footer-links">
+                        <a href="#home" class="nav-link active">Home</a>
+                        <a href="#publications" class="nav-link">Publications</a>
+                        <a href="#music" class="nav-link">Music</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="footer-bottom">
+                <p>&copy; 2024 Huan Wang. All rights reserved. | <a href="https://huan-december.github.io/sitemap.xml" rel="noopener">Sitemap</a> | <a href="https://huan-december.github.io/robots.txt" rel="noopener">Robots.txt</a></p>
+            </div> -->
+        </div>
+    </footer>
+
+    <script>
+        // Publication toggle functionality
+        function togglePublications(categoryId) {
+            const category = document.querySelector(`[onclick="togglePublications('${categoryId}')"]`).parentElement;
+            const button = category.querySelector('.view-more-btn');
+            const allItems = category.querySelectorAll('.publication-item');
+            
+            // Check if we're currently showing all items (expanded state)
+            const hiddenItems = category.querySelectorAll('.publication-hidden');
+            
+            if (hiddenItems.length === 0) {
+                // Currently expanded - hide items beyond the first 3
+                allItems.forEach((item, index) => {
+                    if (index >= 3) {
+                        item.style.display = 'none';
+                        item.classList.add('publication-hidden');
+                    }
+                });
+                button.textContent = 'View More';
+            } else {
+                // Currently collapsed - show all items
+                allItems.forEach(item => {
+                    item.style.display = 'block';
+                    item.classList.remove('publication-hidden');
+                });
+                button.textContent = 'View Less';
+            }
+        }
+
+        // Publication categories toggle functionality
+        function togglePublicationCategories() {
+            const button = document.querySelector('.view-more-categories-btn');
+            const hiddenCategories = document.querySelectorAll('.publication-category-hidden');
+            
+            if (hiddenCategories.length > 0) {
+                // Show hidden categories
+                hiddenCategories.forEach(category => {
+                    category.style.display = 'block';
+                    category.classList.remove('publication-category-hidden');
+                });
+                button.textContent = 'View Less Topics';
+            } else {
+                // Hide categories beyond the first 3
+                const allCategories = document.querySelectorAll('.publication-category');
+                const categoriesToHide = Array.from(allCategories).slice(3);
+                
+                categoriesToHide.forEach(category => {
+                    category.style.display = 'none';
+                    category.classList.add('publication-category-hidden');
+                });
+                button.textContent = 'View More Topics';
+            }
+        }
+
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Email obfuscation and click handler
+        const emailSpan = document.getElementById('email-obfuscated');
+        if (emailSpan) {
+            emailSpan.style.cursor = 'pointer';
+            emailSpan.style.textDecoration = 'underline';
+            emailSpan.title = 'Click to reveal email';
+            
+            emailSpan.addEventListener('click', function() {
+                const realEmail = 'huanwang@salesforce.com';
+                this.textContent = realEmail;
+                this.style.color = '#2563eb';
+                
+                // Create mailto link
+                const mailtoLink = document.createElement('a');
+                mailtoLink.href = 'mailto:' + realEmail;
+                mailtoLink.style.textDecoration = 'none';
+                mailtoLink.style.color = 'inherit';
+                
+                // Replace the span with the link
+                this.parentNode.replaceChild(mailtoLink, this);
+                mailtoLink.appendChild(document.createTextNode(realEmail));
+            });
+        }
+    </script>
+</body>
 </html>
