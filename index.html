@@ -316,7 +316,13 @@
                     <div class="music-grid">
                         <div class="music-item">
                             <h4>最后我们还是变成了曾经讨厌的那个人</h4>
-                            <a href="https://www.youtube.com/watch?v=pfaITIVkvN0" class="btn btn-secondary">YouTube</a>
+                            <div class="youtube-preview" data-youtube-id="pfaITIVkvN0">
+                                <img src="https://img.youtube.com/vi/pfaITIVkvN0/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
+                                <div class="youtube-overlay">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Watch on YouTube</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="music-item">
                             <h4>好久不见</h4>
@@ -336,24 +342,56 @@
                         </div>
                         <div class="music-item">
                             <h4>月光回忆</h4>
+                            <div class="youtube-preview" data-youtube-id="WCx9CAWc4ks">
+                                <img src="https://img.youtube.com/vi/WCx9CAWc4ks/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
+                                <div class="youtube-overlay">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Watch on YouTube</span>
+                                </div>
+                            </div>
                             <a href="WebContent/月光回忆.mp3" class="btn btn-secondary">Listen</a>
-                            <a href="https://www.youtube.com/watch?v=WCx9CAWc4ks" class="btn btn-secondary">YouTube</a>
                         </div>
                         <div class="music-item">
                             <h4>桎梏</h4>
+                            <div class="youtube-preview" data-youtube-id="LlxoXS9bANY">
+                                <img src="https://img.youtube.com/vi/LlxoXS9bANY/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
+                                <div class="youtube-overlay">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Watch on YouTube</span>
+                                </div>
+                            </div>
                             <a href="WebContent/桎梏.mp3" class="btn btn-secondary">Listen</a>
                         </div>
                         <div class="music-item">
                             <h4>生活不止眼前的苟且</h4>
-                            <a href="https://www.youtube.com/watch?v=HXyhaL_nC0M" class="btn btn-secondary">YouTube MV</a>
+                            <div class="youtube-preview" data-youtube-id="HXyhaL_nC0M">
+                                <img src="https://img.youtube.com/vi/HXyhaL_nC0M/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
+                                <div class="youtube-overlay">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Watch on YouTube</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="music-item">
                             <h4>追忆</h4>
-                            <a href="https://www.youtube.com/watch?v=G9094ppQS8M&list=PLPqgQV_7dg0x-4KtSWGJGkVbRESjuVtxg&index=1" class="btn btn-secondary">YouTube MV</a>
+                            <div class="youtube-preview" data-youtube-id="G9094ppQS8M">
+                                <img src="https://img.youtube.com/vi/G9094ppQS8M/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
+                                <div class="youtube-overlay">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Watch on YouTube</span>
+                                </div>
+                            </div>
                             <a href="WebContent/memory_instrument.mp3" class="btn btn-secondary">Instrumental</a>
                         </div>
                         <div class="music-item">
                             <h4>涟漪-A Ripple of Love</h4>
+                            <div class="youtube-preview" data-youtube-id="IMYwLQLFXio">
+                                <img src="https://img.youtube.com/vi/IMYwLQLFXio/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
+                                <div class="youtube-overlay">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Watch on YouTube</span>
+                                </div>
+                            </div>
                             <a href="http://v.youku.com/v_show/id_XNTEwODYzOTEy.html" class="btn btn-secondary">MV (400K+ views)</a>
                             <a href="WebContent/ARippleofLove.mp3" class="btn btn-secondary">Song</a>
                             <a href="WebContent/ARippleofLoveInstruments.mp3" class="btn btn-secondary">Instruments</a>
@@ -427,8 +465,18 @@
                     <h3>YouTube Channel</h3>
                     <div class="youtube-section">
                         <p>Subscribe to my YouTube channel for more music content:</p>
-                        <a href="https://www.youtube.com/user/JoyousPrince/" class="btn btn-primary">
-                            <i class="fab fa-youtube"></i> JoyousPrince (@YouTube)
+                        <a href="https://www.youtube.com/user/JoyousPrince/" class="btn btn-primary" rel="noopener external" aria-label="Subscribe to JoyousPrince YouTube Channel">
+                            <i class="fab fa-youtube" aria-hidden="true"></i> JoyousPrince (@YouTube)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="music-section">
+                    <h3>NetEase Music Channe (网易音乐人)</h3>
+                    <div class="netease-section">
+                        <p>Follow my NetEase Music artist page for streaming my compositions:</p>
+                        <a href="https://music.163.com/#/artist?id=12275358" class="btn btn-primary" rel="noopener external" aria-label="Follow Huan Wang on NetEase Music">
+                            <i class="fas fa-music" aria-hidden="true"></i> Huan Wang (@NetEase Music)
                         </a>
                     </div>
                 </div>
@@ -614,6 +662,16 @@
                 mailtoLink.appendChild(document.createTextNode(realEmail));
             });
         }
+
+        // YouTube preview click handler
+        document.querySelectorAll('.youtube-preview').forEach(preview => {
+            preview.addEventListener('click', function() {
+                const youtubeId = this.getAttribute('data-youtube-id');
+                if (youtubeId) {
+                    window.open(`https://www.youtube.com/watch?v=${youtubeId}`, '_blank', 'noopener,noreferrer');
+                }
+            });
+        });
     </script>
 </body>
 </html>
