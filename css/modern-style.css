@@ -534,6 +534,9 @@ body {
     overflow: hidden;
     height: 200px;
     background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-image img {
@@ -543,6 +546,8 @@ body {
     object-position: center;
     transition: transform 0.3s ease;
     background: white;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .project-card:hover .project-image img {
@@ -552,6 +557,34 @@ body {
 /* Image format optimization */
 .project-image img[src$=".gif"] {
     object-fit: cover;
+}
+
+/* Ensure proper scaling for different image types */
+.project-image img[src$=".png"],
+.project-image img[src$=".jpg"],
+.project-image img[src$=".jpeg"] {
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Special handling for very small images to prevent them from being too tiny */
+.project-image img {
+    min-width: 60px;
+    min-height: 60px;
+}
+
+/* Ensure images maintain aspect ratio while fitting container */
+.project-image {
+    aspect-ratio: 16/9;
+    min-height: 150px;
+}
+
+/* Override aspect ratio for very small screens to give more space */
+@media (max-width: 480px) {
+    .project-image {
+        aspect-ratio: 4/3;
+        min-height: 180px;
+    }
 }
 
 .project-overlay {
@@ -656,7 +689,14 @@ body {
     }
     
     .project-image {
-        height: 180px;
+        height: 200px;
+        min-height: 180px;
+    }
+    
+    .project-image img {
+        object-fit: contain;
+        object-position: center;
+        padding: 10px;
     }
     
     .project-content {
@@ -693,7 +733,16 @@ body {
     }
     
     .project-image {
-        height: 160px;
+        height: 220px;
+        min-height: 200px;
+    }
+    
+    .project-image img {
+        object-fit: contain;
+        object-position: center;
+        padding: 15px;
+        max-width: 100%;
+        max-height: 100%;
     }
     
     .project-content {
@@ -722,7 +771,16 @@ body {
     }
     
     .project-image {
-        height: 140px;
+        height: 200px;
+        min-height: 180px;
+    }
+    
+    .project-image img {
+        object-fit: contain;
+        object-position: center;
+        padding: 12px;
+        max-width: 100%;
+        max-height: 100%;
     }
     
     .project-content {
