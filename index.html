@@ -107,6 +107,7 @@
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#publications" class="nav-link">Publications</a>
+                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#music" class="nav-link">Music</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
@@ -160,6 +161,547 @@
         </div>
         </section>
     </main>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Open Source Projects</h2>
+                <p class="section-subtitle">A collection of research projects and tools I've contributed to, spanning Large Language Models, AI Agents, Multimodal AI, and more.</p>
+            </header>
+            
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="llm">LLM & Code</button>
+                <button class="filter-btn" data-filter="agents">AI Agents</button>
+                <button class="filter-btn" data-filter="multimodal">Multimodal</button>
+                <button class="filter-btn" data-filter="rl">Reinforcement Learning</button>
+                <button class="filter-btn" data-filter="tools">Research Tools</button>
+            </div>
+
+            <!-- Pinterest-style Masonry Grid -->
+            <div class="projects-masonry">
+                <!-- Large Language Models & Code Generation -->
+                <div class="project-card llm" data-category="llm">
+                    <div class="project-image">
+                        <img src="images/APIGen.png" alt="APIGen" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://apigen-pipeline.github.io/" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>APIGen</h3>
+                        <p>Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets</p>
+                        <div class="project-tags">
+                            <span class="tag">LLM</span>
+                            <span class="tag">Code Generation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card llm" data-category="llm">
+                    <div class="project-image">
+                        <img src="images/APIGen-MT.png" alt="APIGen-MT" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://apigen-mt.github.io/" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>APIGen-MT</h3>
+                        <p>Agentic Pipeline for Multi-Turn Data Generation via Simulated Agent-Human Interplay</p>
+                        <div class="project-tags">
+                            <span class="tag">LLM</span>
+                            <span class="tag">Multi-Turn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card llm" data-category="llm">
+                    <div class="project-image">
+                        <img src="images/CodeGen.gif" alt="CodeGen" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/salesforce/CodeGen" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CodeGen</h3>
+                        <p>An Open Large Language Model for Code with Multi-Turn Program Synthesis</p>
+                        <div class="project-tags">
+                            <span class="tag">Code Generation</span>
+                            <span class="tag">LLM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card llm" data-category="llm">
+                    <div class="project-image">
+                        <img src="images/Coda.png" alt="CoDA" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/CoDA" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CoDA</h3>
+                        <p>Coding LM via Diffusion Adaptation</p>
+                        <div class="project-tags">
+                            <span class="tag">Diffusion</span>
+                            <span class="tag">Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card llm" data-category="llm">
+                    <div class="project-image">
+                        <img src="images/xLAM.png" alt="xLAM" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/xLAM" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>xLAM</h3>
+                        <p>A Family of Large Action Models to Empower AI Agent Systems</p>
+                        <div class="project-tags">
+                            <span class="tag">LAM</span>
+                            <span class="tag">Agents</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Agents & Benchmarking -->
+                <div class="project-card agents" data-category="agents">
+                    <div class="project-image">
+                        <img src="images/AgentLite.png" alt="AgentLite" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/AgentLite" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AgentLite</h3>
+                        <p>A Lightweight Library for Building and Advancing Task-Oriented LLM Agent System</p>
+                        <div class="project-tags">
+                            <span class="tag">Agents</span>
+                            <span class="tag">Framework</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card agents" data-category="agents">
+                    <div class="project-image">
+                        <img src="images/BOLAA-webshop.gif" alt="BOLAA" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/salesforce/BOLAA" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>BOLAA</h3>
+                        <p>Benchmarking and Orchestrating LLM-augmented Autonomous Agents</p>
+                        <div class="project-tags">
+                            <span class="tag">Benchmarking</span>
+                            <span class="tag">Agents</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card agents" data-category="agents">
+                    <div class="project-image">
+                        <img src="images/CRMArena.png" alt="CRM Arena" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/CRMArena" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CRM Arena</h3>
+                        <p>Understanding the Capacity of LLM Agents to Perform Professional CRM Tasks in Realistic Environments</p>
+                        <div class="project-tags">
+                            <span class="tag">CRM</span>
+                            <span class="tag">Evaluation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card agents" data-category="agents">
+                    <div class="project-image">
+                        <img src="images/MCPEval.png" alt="MCP Eval" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/MCPEval" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MCP Eval</h3>
+                        <p>Automatic MCP-based Deep Evaluation for AI Agent Models</p>
+                        <div class="project-tags">
+                            <span class="tag">Evaluation</span>
+                            <span class="tag">MCP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card agents" data-category="agents">
+                    <div class="project-image">
+                        <img src="images/PersonaBench.png" alt="Persona Bench" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/PersonaBench" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Persona Bench</h3>
+                        <p>Evaluating AI Models on Understanding Personal Information through Accessing (Synthetic) Private User Data</p>
+                        <div class="project-tags">
+                            <span class="tag">Privacy</span>
+                            <span class="tag">Benchmark</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card agents" data-category="agents">
+                    <div class="project-image">
+                        <img src="images/UserBench.png" alt="UserBench" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/UserBench" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>UserBench</h3>
+                        <p>An Interactive Gym Environment for User-Centric Agents</p>
+                        <div class="project-tags">
+                            <span class="tag">User-Centric</span>
+                            <span class="tag">Environment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card agents" data-category="agents">
+                    <div class="project-image">
+                        <img src="images/UserRL.png" alt="UserRL" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/UserRL" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>UserRL</h3>
+                        <p>User-Centric Reinforcement Learning</p>
+                        <div class="project-tags">
+                            <span class="tag">RL</span>
+                            <span class="tag">User-Centric</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card agents" data-category="agents">
+                    <div class="project-image">
+                        <img src="images/LocoBench.png" alt="LoCoBench" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/LoCoBench" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>LoCoBench</h3>
+                        <p>A Benchmark for Long-Context Large Language Models in Complex Software Engineering</p>
+                        <div class="project-tags">
+                            <span class="tag">Long-Context</span>
+                            <span class="tag">Software Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card agents" data-category="agents">
+                    <div class="project-image">
+                        <img src="images/MobileAIBench.png" alt="MobileAIBench" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/MobileAIBench" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MobileAIBench</h3>
+                        <p>Benchmarking LLMs and LMMs for On-Device Use Cases</p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">On-Device</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Multimodal AI -->
+                <div class="project-card multimodal" data-category="multimodal">
+                    <div class="project-image">
+                        <img src="images/Latte.png" alt="LATTE" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://latte-web.github.io/" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>LATTE</h3>
+                        <p>LeArning to Think wiTh Vision SpEcialists</p>
+                        <div class="project-tags">
+                            <span class="tag">Vision</span>
+                            <span class="tag">Multimodal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card multimodal" data-category="multimodal">
+                    <div class="project-image">
+                        <img src="images/Blip3.png" alt="xGen-MM" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://www.salesforceairesearch.com/opensource/xGen-MM/index.html" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>xGen-MM (BLIP3)</h3>
+                        <p>Multimodal Large Language Model</p>
+                        <div class="project-tags">
+                            <span class="tag">Multimodal</span>
+                            <span class="tag">BLIP3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card multimodal" data-category="multimodal">
+                    <div class="project-image">
+                        <img src="images/UniControl.png" alt="Unicontrol" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/salesforce/UniControl" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Unicontrol</h3>
+                        <p>Unified Control for Multimodal Generation</p>
+                        <div class="project-tags">
+                            <span class="tag">Control</span>
+                            <span class="tag">Generation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reinforcement Learning -->
+                <div class="project-card rl" data-category="rl">
+                    <div class="project-image">
+                        <img src="images/WarpDrive.png" alt="WarpDrive" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/salesforce/warp-drive" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>WarpDrive</h3>
+                        <p>Extremely Fast End-to-End Deep Multi-Agent Reinforcement Learning on a GPU</p>
+                        <div class="project-tags">
+                            <span class="tag">RL</span>
+                            <span class="tag">GPU</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card rl" data-category="rl">
+                    <div class="project-image">
+                        <img src="images/CausalAI.png" alt="CausalAI" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/salesforce/causalai" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CausalAI</h3>
+                        <p>Causal AI Research Tools and Frameworks</p>
+                        <div class="project-tags">
+                            <span class="tag">Causal</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Tools -->
+                <div class="project-card tools" data-category="tools">
+                    <div class="project-image">
+                        <img src="images/Merlion.png" alt="Merlion" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/salesforce/Merlion" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Merlion</h3>
+                        <p>A Machine Learning Library for Time Series</p>
+                        <div class="project-tags">
+                            <span class="tag">Time Series</span>
+                            <span class="tag">ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card tools" data-category="tools">
+                    <div class="project-image">
+                        <img src="images/proptomatix.png" alt="Promptomatix" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/SalesforceAIResearch/promptomatix" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Promptomatix</h3>
+                        <p>A Powerful Framework for LLM Prompt Optimization</p>
+                        <div class="project-tags">
+                            <span class="tag">Prompt</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card tools" data-category="tools">
+                    <div class="project-image">
+                        <img src="images/dei.png" alt="Diversity Empowers Intelligence" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://salesforce-research-dei-agents.github.io/" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Diversity Empowers Intelligence</h3>
+                        <p>Integrating Expertise of Software Engineering Agents</p>
+                        <div class="project-tags">
+                            <span class="tag">Software Engineering</span>
+                            <span class="tag">Diversity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card tools" data-category="tools">
+                    <div class="project-image">
+                        <img src="images/Hive.png" alt="Hive" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://shugerdou.github.io/hive/" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hive</h3>
+                        <p>Harnessing Human Feedback for Instructional Visual Editing</p>
+                        <div class="project-tags">
+                            <span class="tag">Platform</span>
+                            <span class="tag">Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card tools" data-category="tools">
+                    <div class="project-image">
+                        <img src="images/Retroformer.png" alt="Retroformer" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/weirayao/Retroformer" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Retroformer</h3>
+                        <p>Retrospective Large Language Agents with Policy Gradient Optimization</p>
+                        <div class="project-tags">
+                            <span class="tag">Retrospective</span>
+                            <span class="tag">Policy Gradient</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card tools" data-category="tools">
+                    <div class="project-image">
+                        <img src="images/DialogStudio.png" alt="DialogStudio" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/salesforce/DialogStudio" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>DialogStudio</h3>
+                        <p>Towards Richest and Most Diverse Unified Dataset Collection and Instruction-Aware Models for Conversational AI</p>
+                        <div class="project-tags">
+                            <span class="tag">Dialog</span>
+                            <span class="tag">Conversational</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card tools" data-category="tools">
+                    <div class="project-image">
+                        <img src="images/Converse.jpg" alt="Converse" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/salesforce/Converse" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Converse</h3>
+                        <p>A Flexible Framework for Building and Deploying Task-Oriented Chatbots.</p>
+                        <div class="project-tags">
+                            <span class="tag">Conversational</span>
+                            <span class="tag">Framework</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card tools" data-category="tools">
+                    <div class="project-image">
+                        <img src="images/ensemble.png" alt="Ensemble Averages" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/salesforce/ensemble-of-averages" class="project-link" rel="noopener external" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ensemble Averages</h3>
+                        <p>Improving Model Selection and Boosting Performance in Domain Generalization</p>
+                        <div class="project-tags">
+                            <span class="tag">Ensemble</span>
+                            <span class="tag">Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Publications Section -->
     <section id="publications" class="publications">
@@ -306,6 +848,7 @@
             </div>
         </div>
     </section>
+
     <!-- Music Section -->
     <section id="music" class="music">
         <div class="container">
@@ -515,6 +1058,7 @@
                     <div class="footer-links">
                         <a href="#home" class="nav-link active">Home</a>
                         <a href="#publications" class="nav-link">Publications</a>
+                        <a href="#projects" class="nav-link">Projects</a>
                         <a href="#music" class="nav-link">Music</a>
                     </div>
                 </div>
@@ -672,6 +1216,34 @@
                 const youtubeId = this.getAttribute('data-youtube-id');
                 if (youtubeId) {
                     window.open(`https://www.youtube.com/watch?v=${youtubeId}`, '_blank', 'noopener,noreferrer');
+                }
+            });
+        });
+
+        // Project filter functionality - Optimized
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            // Use event delegation for better performance
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('filter-btn')) {
+                    const filter = e.target.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    e.target.classList.add('active');
+                    
+                    // Filter projects with requestAnimationFrame for smooth animation
+                    requestAnimationFrame(() => {
+                        projectCards.forEach(card => {
+                            const shouldShow = filter === 'all' || card.classList.contains(filter);
+                            card.style.display = shouldShow ? 'block' : 'none';
+                            if (shouldShow) {
+                                card.style.animation = 'fadeInUp 0.3s ease forwards';
+                            }
+                        });
+                    });
                 }
             });
         });
