@@ -1,0 +1,583 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=2 cm,
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm,
+]{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Huan Wang's CV},
+    pdfauthor={Huan Wang},
+    pdfcreator={LaTeX},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage[default, type1]{sourcesanspro} 
+
+% Settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\makeatletter
+\let\ps@customFooterStyle\ps@plain
+\patchcmd{\ps@customFooterStyle}{\thepage}{
+    \color{gray}\textit{\small Huan Wang - Page \thepage{} of \pageref*{LastPage}}
+}{}{} 
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{
+    \needspace{4\baselineskip}
+    \Large\color{primaryColor}
+}{
+}{
+}{
+    \textbf{#1}\hspace{0.15cm}\titlerule[0.8pt]\hspace{-0.1cm}
+}[]
+
+\titlespacing{\section}{
+    -1pt
+}{
+    0.3 cm
+}{
+    0.2 cm
+}
+
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{1.2 cm, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\color{primaryColor}\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+\newcommand{\placelastupdatedtext}{%
+  \AddToShipoutPictureFG*{%
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in October 2025}\hspace{\widthof{Last updated in October 2025}}
+    }}}%
+  }%
+}%
+
+\let\hrefWithoutArrow\href
+
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{}
+
+    \placelastupdatedtext
+    \begin{header}
+        \fontsize{30 pt}{30 pt}
+        \textbf{Huan Wang}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}Palo Alto, CA}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{mailto:joyousprince@gmail.com}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}joyousprince@gmail.com}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://huan-december.github.io/}{{\footnotesize\faLink}\hspace*{0.13cm}huan-december.github.io}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/huanwangyale}{{\footnotesize\faLinkedinIn}\hspace*{0.13cm}huanwangyale}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en}{{\footnotesize\faGraduationCap}\hspace*{0.13cm}Google Scholar}}%
+    \end{header}
+
+    \vspace{0.3 cm}
+
+    \section{Research Interests}
+
+    \begin{onecolentry}
+        Machine Learning, Natural Language Processing, Computer Vision, Large Action Models, AI Agents, Reasoning, and Planning.
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \section{Education}
+
+    \begin{threecolentry}{\textbf{Ph.D.}}{
+        2008--2013
+    }
+        \textbf{Yale University}, Computer Science
+        \begin{highlights}
+            \item Advisor: \href{http://cs-www.cs.yale.edu/homes/spielman/}{Prof. Daniel Spielman}, \href{https://www.engineering.columbia.edu/faculty-staff/directory/john-wright}{Prof. John Wright}
+            \item Research on clustering, regression, and dictionary learning
+        \end{highlights}
+    \end{threecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{threecolentry}{\textbf{M.Phil.}}{
+        2005--2007
+    }
+        \textbf{The Chinese University of Hong Kong}, Information Engineering 
+        \begin{highlights}
+            \item Advisor: \href{https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en}{Prof. Xiaoou Tang}, \href{https://yanshuicheng.info/}{Prof. Shuicheng Yan}, \href{https://scholar.google.com/citations?user=sKauaAwAAAAJ&hl=zh-CN}{Prof. Jianzhuang Liu}
+            \item Research on face recognition, manifold learning, subspace learning, semi-supervised learning
+        \end{highlights}
+    \end{threecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{threecolentry}{\textbf{B.Eng.}}{
+        2000--2004
+    }
+        \textbf{Zhejiang University}, Information Engineering, Chu Kochen Honors College
+    \end{threecolentry}
+
+    \vspace{0.2 cm}
+
+    \section{Professional Experience}
+
+    \begin{twocolentry}{
+        Palo Alto, CA
+
+        Feb 2025 -- Present
+    }
+        \textbf{\color{primaryColor}Senior Director}, Salesforce Research
+        \begin{highlights}
+            \item Large Action Models (xLAM), AI Agents, Reasoning, Planning, SWE Agents, Agentforce
+        \end{highlights}
+    \end{twocolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        Palo Alto, CA
+
+        Nov 2021 -- Feb 2025
+    }
+        \textbf{\color{primaryColor}Director}, Salesforce Research
+        \begin{highlights}
+            \item Led teams in AI for Operational Research (AIOps), AI for Software, Conversational AI, Time-Series Anomaly Detection, Uncertainty Estimation, and Data Hardness Evaluation
+        \end{highlights}
+    \end{twocolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        Palo Alto, CA
+
+        Nov 2019 -- Nov 2021
+    }
+        \textbf{\color{primaryColor}Senior Manager}, Salesforce Research
+        \begin{highlights}
+            \item Deep learning theory and applications, reinforcement learning, multi-task learning, language modeling, multilingual NER, knowledge graph
+        \end{highlights}
+    \end{twocolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        Palo Alto, CA
+
+        2018 -- Nov 2019
+    }
+        \textbf{\color{primaryColor}Senior Research Scientist}, Salesforce Research
+        \begin{highlights}
+            \item Deep learning research in large-scale language modeling and vision-language integration
+        \end{highlights}
+    \end{twocolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        Sunnyvale, CA
+
+        2015 -- 2018
+    }
+        \textbf{Senior Applied Researcher}, Microsoft AI Research
+        \begin{highlights}
+            \item Developed deep learning systems for recommendation, ranking, and intelligent Q\&A
+            \item Improved web and local search relevance using neural embeddings
+        \end{highlights}
+    \end{twocolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        New York, NY
+
+        2013 -- 2015
+    }
+        \textbf{Research Scientist}, Yahoo! Labs
+        \begin{highlights}
+            \item Designed large-scale ML algorithms for search ads prediction and account security prediction
+            \item Leveraged Hadoop, Spark, and Storm for data processing
+        \end{highlights}
+    \end{twocolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        New York, NY
+
+        2012 -- 2013
+    }
+        \textbf{Adjunct Professor}, New York University
+        \begin{highlights}
+            \item Taught the "Machine Learning" class.
+        \end{highlights}
+    \end{twocolentry}    
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        New York, NY
+
+        2012 -- 2013
+    }
+        \textbf{Adjunct Professor}, Baruch College
+        \begin{highlights}
+            \item Taught the "Algorithm Design" class.
+        \end{highlights}
+    \end{twocolentry}    
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        Redmond, WA
+
+        2011 -- 2011
+    }
+        \textbf{Research Intern}, Microsoft Research
+        \begin{highlights}
+            \item Projects on anomaly detection and time series modeling
+        \end{highlights}
+    \end{twocolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        Beijing, China
+
+        2010 -- 2010
+    }
+        \textbf{Research Intern}, Microsoft Research Asia
+        \begin{highlights}
+            \item Projects on anomaly detection, image modeling, and dictionary learning
+        \end{highlights}
+    \end{twocolentry}
+
+    \vspace{0.2 cm}
+
+    \section{Honors and Awards}
+
+    \begin{onecolentry}
+        \begin{highlightsforbulletentries}
+            \item Best Paper Award, Conference on Learning Theory (COLT), 2012
+            \item Award of Excellence – Stars of Tomorrow, Microsoft Research, Asia
+            \item Bachelor's Degree with Honors, Zhejiang University
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \section{Representative Publications}
+
+    Full publication list: \href{https://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en}{Google Scholar}\\
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Large Language Models (LLMs)}
+        \begin{highlightsforbulletentries}
+            \item \href{https://arxiv.org/pdf/2504.03601}{APIGen-MT: Agentic Pipeline for Multi-Turn Data Generation via Simulated Agent-Human Interplay.} NeurIPS Datasets \& Benchmarks Track, 2025. (\textit{co-corresponding author}),\href{https://huggingface.co/datasets/Salesforce/APIGen-MT-5k}{Data}, \href{https://huggingface.co/collections/Salesforce/xlam-2-67ef5be12949d8dcdae354c4}{Model}
+            \item \href{https://proceedings.neurips.cc/paper_files/paper/2024/file/61cce86d180b1184949e58939c4f983d-Paper-Datasets_and_Benchmarks_Track.pdf}{APIGen: Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets.} NeurIPS, 2024. \href{https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k}{[Data]}, \href{https://huggingface.co/collections/Salesforce/xlam-models-65f00e2a0a63bbcd1c2dade4}{[Model]}
+            \item \href{https://arxiv.org/abs/2409.03215}{xLAM: A Family of Large Action Models to Empower AI Agent Systems.} NAACL, 2024. (\textit{co-corresponding author}), \href{https://github.com/SalesforceAIResearch/xLAM}{[Code]}
+            \item \href{https://arxiv.org/abs/2308.02151}{Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization}, ICLR, 2024. (\textit{co-corresponding author})
+            \item \href{https://arxiv.org/abs/2203.13474}{CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis}, ICLR, 2023. \href{https://github.com/salesforce/CodeGen}{[Code]}      
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{AI Agents and Multi-Agent Systems}
+        \begin{highlightsforbulletentries}
+            \item \href{https://arxiv.org/abs/2402.15538}{AgentLite: A Lightweight Library for Building and Advancing Task-Oriented LLM Agent System.} Arxiv, 2024. \href{https://github.com/SalesforceAIResearch/AgentLite}{[Code]}
+            \item \href{https://arxiv.org/abs/2411.02305}{CRMArena: Understanding the Capacity of LLM Agents to Perform Professional CRM Tasks in Realistic Environments.} NAACL, 2025. \href{https://github.com/SalesforceAIResearch/CRMArena}{[Code]}
+            \item \href{https://arxiv.org/abs/2507.12806}{MCPEval: Automatic MCP-based Deep Evaluation for AI Agent Models.} Arxiv, 2025. \href{https://github.com/SalesforceAIResearch/MCPEval}{[Code]}
+            \item \href{https://arxiv.org/abs/2307.08962}{REX: Rapid Exploration and eXploitation for AI Agents.} Arxiv, 2023.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{LLM Reasoning}
+        \begin{highlightsforbulletentries}
+            \item \href{https://arxiv.org/abs/2411.04282}{Language Models are Hidden Reasoners: Unlocking Latent Reasoning Capabilities via Self-Rewarding.} Arxiv, 2024.
+            \item \href{https://arxiv.org/abs/2410.18528}{PRACT: Optimizing Principled Reasoning and Acting of LLM Agent.} SIG CoNLL, 2024.
+            \item \href{https://arxiv.org/abs/2412.05479}{LATTE: Learning to Think with Vision Specialists.} Arxiv, 2024.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Reinforcement Learning}
+        \begin{highlightsforbulletentries}
+            \item \href{https://proceedings.neurips.cc/paper_files/paper/2021/file/e61eaa38aed621dd776d0e67cfeee366-Paper.pdf}{Policy Finetuning: Bridging Sample-Efficient Offline and Online Reinforcement Learning.} NeurIPS, 2021.
+            \item \href{https://arxiv.org/abs/2108.13976}{WarpDrive: Extremely Fast End-to-End Deep Multi-Agent Reinforcement Learning on a GPU.} arXiv, 2021.
+            \item \href{https://proceedings.mlr.press/v97/wang19o.html}{On the Generalization Gap in Reparameterizable Reinforcement Learning.} ICML, 2019.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Uncertainty Estimation \& Reliability}
+        \begin{highlightsforbulletentries}
+            \item \href{https://proceedings.mlr.press/v202/bhatnagar23a.html}{Improved Online Conformal Prediction via Strongly Adaptive Online Learning.} ICML, 2023.
+            \item \href{https://arxiv.org/abs/2106.05515}{Understanding the Under-Coverage Bias in Uncertainty Estimation.} NeurIPS, 2021.
+            \item \href{https://arxiv.org/abs/2102.07856}{Don't Just Blame Over-parametrization for Over-confidence: Theoretical Analysis of Calibration in Binary Classification.} ICML, 2021.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Time Series, Causality and Neural Editing}
+        \begin{highlightsforbulletentries}
+            \item \href{https://www.jmlr.org/papers/v24/22-0809.html}{Merlion: End-to-End Machine Learning for Time Series.} JMLR, 2023
+            \item \href{https://proceedings.mlr.press/v236/feigenbaum24a.html}{Causal Layering via Conditional Entropy.} PMLR, 2024.
+            \item \href{https://arxiv.org/abs/2301.10859}{Salesforce CausalAI Library: A Fast and Scalable Framework for Causal Analysis of Time Series and Tabular Data.} Arxiv, 2023.
+            \item \href{https://arxiv.org/abs/2303.05628}{On the Unlikelihood of D-Separation.} Arxiv, 2023.            
+            \item \href{https://arxiv.org/pdf/2401.07526}{Editing Arbitrary Propositions in LLMs without Subject Label.} Arxiv, 2024.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+    
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Earlier Work in Machine Learning and Sparse Representation}
+        \begin{highlightsforbulletentries}
+            \item \href{http://jmlr.csail.mit.edu/proceedings/papers/v23/spielman12/spielman12.pdf}{Exact Recovery of Sparsely-Used Dictionaries.} COLT, 2012. \textbf{\textit{Best Paper Award.}}
+             \item \href{https://ieeexplore.ieee.org/abstract/document/4270008}{Trace ratio vs. ratio trace for dimensionality reduction.} CVPR, 2007. 
+             \item \href{https://openreview.net/pdf?id=S1uxsye0Z}{Adaptive Dropout with Rademacher Complexity Regularization.} ICLR, 2018. 
+             \item \href{https://ieeexplore.ieee.org/abstract/document/4270008}{Trace ratio vs. ratio trace for dimensionality reduction.} CVPR, 2007.              
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \section{Open Source Projects}
+
+    \begin{onecolentry}
+        \textbf{Large Action Models and AI Agents}
+        \begin{highlightsforbulletentries}
+            \item \href{https://github.com/SalesforceAIResearch/xLAM}{xLAM}: A family of large action models for AI agent systems.
+            \item \href{https://github.com/SalesforceAIResearch/AgentLite}{AgentLite}: A lightweight library for building task-oriented LLM agent systems.
+            \item \href{https://github.com/SalesforceAIResearch/BOLAA}{BOLAA}: Towards Better Optimization of Language Model Alignment.
+            \item \href{https://github.com/SalesforceAIResearch/CRMArena}{CRMArena}: A benchmark for evaluating LLM agents on professional CRM tasks.
+            \item \href{https://github.com/SalesforceAIResearch/MCPEval}{MCPEval}: Automatic MCP-based deep evaluation for AI agent models.
+            \item \href{https://github.com/SalesforceAIResearch/PersonaBench}{PersonaBench}: A benchmark for persona-based conversation systems.
+            \item \href{https://github.com/SalesforceAIResearch/MobileAIBench}{MobileAIBench}: A benchmark for evaluating AI systems on mobile devices.            
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Function Calling and API Generation}
+        \begin{highlightsforbulletentries}
+            \item \href{https://apigen-pipeline.github.io/}{APIGen}: Automated pipeline for generating verifiable and diverse function-calling datasets.
+            \item \href{https://apigen-mt.github.io/}{APIGen-MT}: Agentic pipeline for multi-turn data generation via simulated agent-human interplay.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Code Generation and Software Engineering}
+        \begin{highlightsforbulletentries}
+            \item \href{https://github.com/salesforce/CodeGen}{CodeGen}: A family of open-source models for code generation.
+            \item \href{https://github.com/SalesforceAIResearch/CoDA}{CoDA}: Coding language models via diffusion adaptation.
+            \item \href{https://github.com/SalesforceAIResearch/LoCoBench}{LoCoBench}: A benchmark for long-context large language models in complex software engineering.
+            \item \href{https://salesforce-research-dei-agents.github.io/}{Diversity Empowers Intelligence}: Integrating expertise of software engineering agents.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Vision and Multimodal Models}
+        \begin{highlightsforbulletentries}
+            \item \href{https://latte-web.github.io/}{LATTE}: Learning to think with vision specialists.
+            \item \href{https://www.salesforceairesearch.com/opensource/xGen-MM/index.html}{xGen-MM (BLIP3)}: Multimodal generative models. \href{https://github.com/salesforce/LAVIS/tree/xgen-mm}{[Code]}
+            \item \href{https://github.com/salesforce/UniControl}{UniControl}: A unified diffusion model for controllable image generation.
+            \item \href{https://shugerdou.github.io/hive/}{Hive}: Harnessing Human Feedback for Instructional Visual Editing.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Reinforcement Learning and Optimization}
+        \begin{highlightsforbulletentries}
+            \item \href{https://github.com/salesforce/warp-drive}{WarpDrive}: Extremely fast end-to-end deep multi-agent reinforcement learning on GPU.
+            \item \href{https://github.com/SalesforceAIResearch/UserRL}{UserRL}: User-Centric Reinforcement Learning.
+            \item \href{https://github.com/SalesforceAIResearch/UserBench}{UserBench}: An Interactive Gym Environment for User-Centric Agents.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Prompt Optimization}
+        \begin{highlightsforbulletentries}
+            \item \href{https://github.com/SalesforceAIResearch/promptomatix}{Promptomatix}: A powerful framework for LLM prompt optimization.
+            \item \href{https://github.com/weirayao/Retroformer}{Retroformer}: Retrospective large language agents with policy gradient optimization.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Time Series and Causal Learning}
+        \begin{highlightsforbulletentries}
+            \item \href{https://github.com/salesforce/Merlion}{Merlion}: An easy-to-use library for time series anomaly detection and forecasting. \href{https://www.salesforce.com/blog/merlion/}{[Blog]}
+            \item \href{https://github.com/salesforce/causalai}{CausalAI}: A library for causal inference and causal discovery.
+            % \item \href{https://github.com/salesforce/ensemble-of-averages}{Ensemble Averages}: Methods for ensemble learning and averaging.
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{onecolentry}
+        \textbf{Dialog and Conversation Systems}
+        \begin{highlightsforbulletentries}
+            \item \href{https://github.com/salesforce/Converse}{Converse}: A framework for conversational AI applications.
+            \item \href{https://github.com/salesforce/DialogStudio}{DialogStudio}: A comprehensive dialogue understanding benchmark and toolkit.            
+        \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \section{Skills}
+
+    \begin{onecolentry}
+        \textbf{Technical:} Machine Learning, Deep Learning, Reinforcement Learning, NLP, Computer Vision, Algorithms, AI Agents, Data Mining
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{onecolentry}
+        \textbf{Programming:} Python, PyTorch, TensorFlow, Spark, Hadoop
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{onecolentry}
+        \textbf{Languages:} English, Chinese
+    \end{onecolentry}
+
+\end{document}
