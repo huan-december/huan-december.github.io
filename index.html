@@ -112,6 +112,13 @@
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#publications" class="nav-link">Publications</a>
                 <a href="#music" class="nav-link">Music</a>
+                <span class="nav-divider" aria-hidden="true"></span>
+                <a href="WebContent/CV_Huan.pdf" class="nav-icon" rel="noopener" target="_blank" aria-label="Download CV (PDF)" title="CV">
+                    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en" class="nav-icon" rel="noopener external" target="_blank" aria-label="Google Scholar profile" title="Google Scholar">
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                </a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -129,6 +136,7 @@
                     <div class="hero-text">
                         <h1 class="hero-title">Huan Wang</h1>
                         <p class="hero-subtitle">Senior Director at Salesforce Research</p>
+                        <p class="hero-tagline"><em>Composer and singer in spare time</em></p>
                     <p class="hero-description">
                             I am currently a Senior Director at Salesforce Research in Palo Alto, CA. I received my Ph.D. in Computer Science from Yale University in 2013, where I was advised by Prof.
                             <a href="http://cs-www.cs.yale.edu/homes/spielman/" class="hero-link">Daniel Spielman</a>. 
@@ -144,16 +152,13 @@
                     </p>
                     <div class="hero-buttons">
                         <a href="https://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en" class="btn btn-primary" rel="noopener external" aria-label="View Huan Wang's Google Scholar profile">
-                            <i class="fab fa-google-scholar" aria-hidden="true"></i> Google Scholar
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
                         </a>
                         <a href="https://www.linkedin.com/in/huanwangyale" class="btn btn-secondary" rel="noopener external" aria-label="Connect with Huan Wang on LinkedIn">
                             <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
                         </a>
                         <a href="https://x.com/huan__wang" class="btn btn-secondary" rel="noopener external" aria-label="Follow Huan Wang on Twitter">
                             <i class="fab fa-twitter" aria-hidden="true"></i> Twitter
-                        </a>
-                        <a href="WebContent/CV_Huan.pdf" class="btn btn-secondary" rel="noopener" aria-label="Download Huan Wang's CV" target="_blank">
-                            <i class="fas fa-file-pdf" aria-hidden="true"></i> CV
                         </a>
                     </div>
                 </div>
@@ -165,17 +170,32 @@
         </section>
     </main>
 
+    <!-- Recent News -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="news-title">Recent</h2>
+            <ul class="news-list">
+                <li><span class="news-date">2025</span><span class="news-text"><strong>APIGen-MT</strong> accepted at NeurIPS Datasets and Benchmarks Track. <a href="https://arxiv.org/pdf/2504.03601" rel="noopener external" target="_blank">Paper</a></span></li>
+                <li><span class="news-date">2025</span><span class="news-text">Released new song <a href="https://www.youtube.com/watch?v=x6Flf9REXJU" rel="noopener external" target="_blank"><em>下雪的纽约</em></a></span></li>
+                <li><span class="news-date">2025</span><span class="news-text">Released new song <a href="https://www.youtube.com/watch?v=Ma0eBSMxqMA" rel="noopener external" target="_blank"><em>再见容易再见难</em></a></span></li>
+                <li><span class="news-date">2025</span><span class="news-text"><strong>UserBench</strong> &amp; <strong>UserRL</strong> released — interactive environments for user-centric agents. <a href="https://github.com/SalesforceAIResearch/UserBench" rel="noopener external" target="_blank">UserBench</a> · <a href="https://github.com/SalesforceAIResearch/UserRL" rel="noopener external" target="_blank">UserRL</a></span></li>
+                <li><span class="news-date">2024</span><span class="news-text"><strong>xLAM</strong> family of Large Action Models released. <a href="https://github.com/SalesforceAIResearch/xLAM" rel="noopener external" target="_blank">GitHub</a></span></li>
+                <li><span class="news-date">2024</span><span class="news-text"><strong>APIGen</strong> accepted at NeurIPS. <a href="https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k" rel="noopener external" target="_blank">Dataset</a></span></li>
+            </ul>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <header class="section-header">
                 <h2 class="section-title">Open Source Projects</h2>
-                <p class="section-subtitle">A collection of research projects and tools I've contributed to, spanning Large Language Models, AI Agents, Multimodal AI, and more.</p>
             </header>
-            
+
             <!-- Filter Buttons -->
             <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn active" data-filter="highlight">Highlights</button>
+                <button class="filter-btn" data-filter="all">All Projects</button>
                 <button class="filter-btn" data-filter="llm">LLM & Code</button>
                 <button class="filter-btn" data-filter="agents">AI Agents</button>
                 <button class="filter-btn" data-filter="multimodal">Multimodal</button>
@@ -186,7 +206,7 @@
             <!-- Pinterest-style Masonry Grid -->
             <div class="projects-masonry">
                 <!-- Large Language Models & Code Generation -->
-                <div class="project-card llm" data-category="llm">
+                <div class="project-card llm highlight" data-category="llm">
                     <div class="project-image">
                         <img src="images/APIGen.png" alt="APIGen" loading="lazy">
                         <div class="project-overlay">
@@ -205,7 +225,7 @@
                     </div>
                 </div>
 
-                <div class="project-card llm" data-category="llm">
+                <div class="project-card llm highlight" data-category="llm">
                     <div class="project-image">
                         <img src="images/APIGen-MT.png" alt="APIGen-MT" loading="lazy">
                         <div class="project-overlay">
@@ -224,7 +244,7 @@
                     </div>
                 </div>
 
-                <div class="project-card llm" data-category="llm">
+                <div class="project-card llm highlight" data-category="llm">
                     <div class="project-image">
                         <img src="images/CodeGen.gif" alt="CodeGen" loading="lazy">
                         <div class="project-overlay">
@@ -262,7 +282,7 @@
                     </div>
                 </div>
 
-                <div class="project-card llm" data-category="llm">
+                <div class="project-card llm highlight" data-category="llm">
                     <div class="project-image">
                         <img src="images/xLAM.png" alt="xLAM" loading="lazy">
                         <div class="project-overlay">
@@ -551,7 +571,7 @@
                 </div>
 
                 <!-- Research Tools -->
-                <div class="project-card tools" data-category="tools">
+                <div class="project-card tools highlight" data-category="tools">
                     <div class="project-image">
                         <img src="images/Merlion.png" alt="Merlion" loading="lazy">
                         <div class="project-overlay">
@@ -627,7 +647,7 @@
                     </div>
                 </div>
 
-                <div class="project-card tools" data-category="tools">
+                <div class="project-card tools highlight" data-category="tools">
                     <div class="project-image">
                         <img src="images/Retroformer.png" alt="Retroformer" loading="lazy">
                         <div class="project-overlay">
@@ -710,144 +730,125 @@
     <section id="publications" class="publications">
         <div class="container">
             <header class="section-header">
-                <h2 class="section-title">Publication Highlights</h2>
-                <p class="section-subtitle">Full publication list can be found on <a href="https://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en" class="publication-link" rel="noopener external">Google Scholar</a>.</p>
+                <h2 class="section-title">
+                    Publications
+                    <a href="https://scholar.google.com/citations?user=7NpTttkAAAAJ&hl=en" class="section-title-icon" rel="noopener external" target="_blank" aria-label="Full publication list on Google Scholar" title="View full list on Google Scholar">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </a>
+                </h2>
             </header>
+            <!-- Filter buttons -->
+            <div class="publication-filters">
+                <button class="pub-filter-btn active" data-filter="selected">Selected</button>
+                <button class="pub-filter-btn" data-filter="llm">LLM</button>
+                <button class="pub-filter-btn" data-filter="agent">AI Agents</button>
+                <button class="pub-filter-btn" data-filter="reasoning">Reasoning</button>
+                <button class="pub-filter-btn" data-filter="rl">RL</button>
+                <button class="pub-filter-btn" data-filter="theory">Theory &amp; Other</button>
+            </div>
+
             <div class="publications-content">
-				<div class="publication-category">
-                    <h3>Large Language Model (LLM)</h3>
-					<div class="publication-item">
+                <div class="publication-list">
+                    <div class="publication-item" data-categories="selected llm">
                         <p><a href="https://arxiv.org/pdf/2504.03601" class="publication-link">APIGen-MT: Agentic PIpeline for Multi-Turn Data Generation via Simulated Agent-Human Interplay</a>, by Akshara Prabhakar, Zuxin Liu, Ming Zhu, Jianguo Zhang, Tulika Awalgaonkar, Shiyu Wang, Zhiwei Liu, Haolin Chen, Thai Hoang, Juan Carlos Niebles, Shelby Heinecke, Weiran Yao, Huan Wang*, Silvio Savarese*, Caiming Xiong*. NeurIPS Datasets and Benchmarks Track, 2025. <a href="https://huggingface.co/datasets/Salesforce/APIGen-MT-5k" class="github-link">[Data]</a><a href="https://huggingface.co/collections/Salesforce/xlam-2-67ef5be12949d8dcdae354c4" class="github-link">[Model]</a>, * co-corresponding authors.</p>
-                    </div>	
-					<div class="publication-item">
+                    </div>
+                    <div class="publication-item" data-categories="selected llm">
                         <p><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/61cce86d180b1184949e58939c4f983d-Paper-Datasets_and_Benchmarks_Track.pdf" class="publication-link">APIGen: Automated PIpeline for Generating Verifiable and Diverse Function-Calling Datasets</a>, by Zuxin Liu, Thai Hoang, Jianguo Zhang, Ming Zhu, Tian Lan, Shirley Kokane, Juntao Tan, Weiran Yao, Zhiwei Liu, Yihao Feng, Rithesh Murthy, Liangwei Yang, Silvio Savarese, Juan Carlos Niebles, Huan Wang, Shelby Heinecke, Caiming Xiong. NeurIPS, 2024. <a href="https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k" class="github-link">[Data]</a><a href="https://huggingface.co/collections/Salesforce/xlam-models-65f00e2a0a63bbcd1c2dade4" class="github-link">[Model]</a></p>
-                    </div>	
-					<div class="publication-item">
+                    </div>
+                    <div class="publication-item" data-categories="selected llm">
                         <p><a href="https://arxiv.org/abs/2409.03215" class="publication-link">xLAM: A Family of Large Action Models to Empower AI Agent Systems</a>, by Jianguo Zhang, Tian Lan, Ming Zhu, Zuxin Liu, Thai Hoang, Shirley Kokane, Weiran Yao, Juntao Tan, Akshara Prabhakar, Haolin Chen, Zhiwei Liu, Yihao Feng, Tulika Awalgaonkar, Rithesh Murthy, Eric Hu, Zeyuan Chen, Ran Xu, Juan Carlos Niebles, Shelby Heinecke, Huan Wang*, Silvio Savarese*, Caiming Xiong*. Arxiv, 2024. <a href="https://github.com/SalesforceAIResearch/xLAM" class="github-link">[Github Repo]</a>, * co-corresponding authors.</p>
-                    </div>					
-                    <div class="publication-item publication-hidden">
+                    </div>
+                    <div class="publication-item" data-categories="selected llm">
                         <p><a href="https://arxiv.org/abs/2308.02151" class="publication-link">Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization</a>, by Weiran Yao, Shelby Heinecke, Juan Carlos Niebles, Zhiwei Liu, Yihao Feng, Le Xue, Rithesh Murthy, Zeyuan Chen, Jianguo Zhang, Devansh Arpit, Ran Xu, Phil Mui, Huan Wang*, Caiming Xiong*, Silvio Savarese*. Arxiv, 2023. <a href="https://github.com/weirayao/Retroformer" class="github-link">[Github Repo]</a>, * co-corresponding authors.</p>
                     </div>
-					<div class="publication-item publication-hidden">
+                    <div class="publication-item" data-categories="selected llm">
+                        <p><a href="https://arxiv.org/abs/2203.13474" class="publication-link">CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis</a>, by Erik Nijkamp, Bo Pang, Hiroaki Hayashi, Lifu Tu, Huan Wang, Yingbo Zhou, Silvio Savarese, Caiming Xiong. Arxiv, 2022. <a href="https://github.com/salesforce/CodeGen" class="github-link">[Github Repo]</a></p>
+                    </div>
+                    <div class="publication-item" data-categories="selected theory">
+                        <p><a href="http://jmlr.csail.mit.edu/proceedings/papers/v23/spielman12/spielman12.pdf" class="publication-link">Exact Recovery of Sparsely-Used Dictionaries</a>, by Daniel Spielman, Huan Wang, and John Wright. <span class="award">Best paper award</span> of the 25th Conference on Learning Theory (COLT), Jun.2012.</p>
+                    </div>
+                    <div class="publication-item" data-categories="llm">
                         <p><a href="https://arxiv.org/abs/2308.05960" class="publication-link">BOLAA: Benchmarking and Orchestrating LLM-augmented Autonomous Agents</a>, by Zhiwei Liu, Weiran Yao, Jianguo Zhang, Le Xue, Shelby Heinecke, Rithesh Murthy, Yihao Feng, Zeyuan Chen, Juan Carlos Niebles, Devansh Arpit, Ran Xu, Phil Mui, Huan Wang*, Caiming Xiong*, Silvio Savarese*. Arxiv, 2023. <a href="https://github.com/salesforce/BOLAA" class="github-link">[Github Repo]</a>, * co-corresponding authors.</p>
                     </div>
-					<div class="publication-item publication-hidden">
+                    <div class="publication-item" data-categories="llm">
                         <p><a href="https://arxiv.org/abs/2307.08962" class="publication-link">REX: Rapid Exploration and eXploitation for AI Agents</a>, by Rithesh Murthy, Shelby Heinecke, Juan Carlos Niebles, Zhiwei Liu, Le Xue, Weiran Yao, Yihao Feng, Zeyuan Chen, Akash Gokul, Devansh Arpit, Ran Xu, Phil Mui, Huan Wang*, Caiming Xiong*, Silvio Savarese*. Arxiv, 2023. * co-corresponding authors.</p>
-                    </div>			
-                    <div class="publication-item publication-hidden">
+                    </div>
+                    <div class="publication-item" data-categories="llm">
                         <p><a href="https://arxiv.org/abs/2402.15506" class="publication-link">AgentOhana: Design Unified Data and Training Pipeline for Effective Agent Learning</a>, by Jianguo Zhang, Tian Lan, Rithesh Murthy, Zhiwei Liu, Weiran Yao, Ming Zhu, Juntao Tan, Thai Hoang, Zuxin Liu, Liangwei Yang, Yihao Feng, Shirley Kokane, Tulika Awalgaonkar, Juan Carlos Niebles, Silvio Savarese, Shelby Heinecke, Huan Wang, Caiming Xiong. Arxiv, 2024. <a href="https://github.com/SalesforceAIResearch/AgentOhana" class="github-link">[Github Repo]</a></p>
                     </div>
-                    <div class="publication-item publication-hidden">
-                        <p><a href="https://arxiv.org/abs/2203.13474" class="publication-link">CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis</a>, by Erik Nijkamp, Bo Pang, Hiroaki Hayashi, Lifu Tu, Huan Wang, Yingbo Zhou, Silvio Savarese, Caiming Xiong. Arxiv, 2022. <a href="https://github.com/salesforce/CodeGen" class="github-link">[Github Repo]</a></p>
-                    </div>					
-                    <button class="view-more-btn" onclick="togglePublications('llm-lam')">View More</button>
-                </div>
-
-                <div class="publication-category">
-                    <h3>AI Agent</h3>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="agent">
                         <p><a href="https://arxiv.org/abs/2402.15538" class="publication-link">AgentLite: A Lightweight Library for Building and Advancing Task-Oriented LLM Agent System</a>, by Zhiwei Liu, Weiran Yao, Jianguo Zhang, Liangwei Yang, Zuxin Liu, Juntao Tan, Prafulla K. Choubey, Tian Lan, Jason Wu, Huan Wang, Shelby Heinecke, Caiming Xiong, Silvio Savarese. Arxiv, 2024. <a href="https://github.com/SalesforceAIResearch/AgentLite" class="github-link">[Github Repo]</a></p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="agent">
                         <p><a href="https://arxiv.org/abs/2408.07060" class="publication-link">Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents</a>, by Kexin Zhang, Weiran Yao, Zuxin Liu, Yihao Feng, Zhiwei Liu, Rithesh Murthy, Tian Lan, Lei Li, Renze Lou, Jiacheng Xu, Bo Pang, Yingbo Zhou, Shelby Heinecke, Silvio Savarese, Huan Wang, Caiming Xiong. Arxiv, 2024.</p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="agent">
                         <p><a href="https://arxiv.org/abs/2411.02305" class="publication-link">CRMArena: Understanding the Capacity of LLM Agents to Perform Professional CRM Tasks in Realistic Environments</a>, by Kung-Hsiang Huang, Akshara Prabhakar, Sidharth Dhawan, Yixin Mao, Huan Wang, Silvio Savarese, Caiming Xiong, Philippe Laban, Chien-Sheng Wu. NAACL, 2025. <a href="https://github.com/SalesforceAIResearch/CRMArena" class="github-link">[Github Repo]</a></p>
                     </div>
-                    <div class="publication-item publication-hidden">
+                    <div class="publication-item" data-categories="agent">
                         <p><a href="https://arxiv.org/abs/2406.10290" class="publication-link">MobileAIBench: Benchmarking LLMs and LMMs for On-Device Use Cases</a>, by Rithesh Murthy, Liangwei Yang, Juntao Tan, Tulika Manoj Awalgaonkar, Yilun Zhou, Shelby Heinecke, Sachin Desai, Jason Wu, Ran Xu, Sarah Tan, Jianguo Zhang, Zhiwei Liu, Shirley Kokane, Zuxin Liu, Ming Zhu, Huan Wang, Caiming Xiong, Silvio Savarese. Arxiv, 2024.</p>
                     </div>
-                    <div class="publication-item publication-hidden">
+                    <div class="publication-item" data-categories="agent">
                         <p><a href="https://arxiv.org/abs/2507.12806" class="publication-link">MCPEval: Automatic MCP-based Deep Evaluation for AI Agent Models</a>, by Zhiwei Liu, Jielin Qiu, Shiyu Wang, Jianguo Zhang, Zuxin Liu, Roshan Ram, Haolin Chen, Weiran Yao, Shelby Heinecke, Silvio Savarese, Huan Wang, Caiming Xiong. Arxiv, 2025. <a href="https://github.com/SalesforceAIResearch/MCPEval" class="github-link">[Github Repo]</a></p>
                     </div>
-                    <div class="publication-item publication-hidden">
+                    <div class="publication-item" data-categories="agent">
                         <p><a href="https://arxiv.org/abs/2411.13547" class="publication-link">ToolScan: A Benchmark for Characterizing Errors in Tool-Use LLMs</a>, by Shirley Kokane, Ming Zhu, Tulika Awalgaonkar, Jianguo Zhang, Thai Hoang, Akshara Prabhakar, Zuxin Liu, Tian Lan, Liangwei Yang, Juntao Tan, Rithesh Murthy, Weiran Yao, Zhiwei Liu, Juan Carlos Niebles, Huan Wang, Shelby Heinecke, Caiming Xiong, Silvio Savarese. Arxiv, 2024.</p>
                     </div>
-                    <div class="publication-item publication-hidden">
+                    <div class="publication-item" data-categories="agent">
                         <p><a href="https://arxiv.org/abs/2507.22034" class="publication-link">UserBench: An Interactive Gym Environment for User-Centric Agents</a>, by Cheng Qian, Zuxin Liu, Akshara Prabhakar, Zhiwei Liu, Jianguo Zhang, Haolin Chen, Heng Ji, Weiran Yao, Shelby Heinecke, Silvio Savarese, Caiming Xiong, Huan Wang. Arxiv, 2025.</p>
                     </div>
-                    <div class="publication-item publication-hidden">
+                    <div class="publication-item" data-categories="agent">
                         <p><a href="https://arxiv.org/abs/2509.09614" class="publication-link">LoCoBench: A Benchmark for Long-Context Large Language Models in Complex Software Engineering</a>, by Jielin Qiu, Zuxin Liu, Zhiwei Liu, Rithesh Murthy, Jianguo Zhang, Haolin Chen, Shiyu Wang, Ming Zhu, Liangwei Yang, Juntao Tan, Zhepeng Cen, Cheng Qian, Shelby Heinecke, Weiran Yao, Silvio Savarese, Caiming Xiong, Huan Wang. Arxiv, 2025. <a href="https://github.com/SalesforceAIResearch/LoCoBench" class="github-link">[Github Repo]</a></p>
                     </div>
-                    <div class="publication-item publication-hidden">
+                    <div class="publication-item" data-categories="agent">
                         <p><a href="https://arxiv.org/abs/2506.02298" class="publication-link">LAM SIMULATOR: Advancing Data Generation for Large Action Model Training via Online Exploration and Trajectory Feedback</a>, by Thai Hoang, Kung-Hsiang Huang, Shirley Kokane, Jianguo Zhang, Zuxin Liu, Ming Zhu, Jake Grigsby, Tian Lan, Michael S Ryoo, Chien-Sheng Wu, Shelby Heinecke, Huan Wang, Silvio Savarese, Caiming Xiong, Juan Carlos Niebles. Arxiv, 2025. <a href="https://github.com/SalesforceAIResearch/LAM-SIMULATOR" class="github-link">[Github Repo]</a></p>
                     </div>
-                    <div class="publication-item publication-hidden">
+                    <div class="publication-item" data-categories="agent">
                         <p><a href="https://arxiv.org/abs/2502.20616" class="publication-link">PersonaBench: Evaluating AI Models on Understanding Personal Information through Accessing (Synthetic) Private User Data</a>, by Juntao Tan, Liangwei Yang, Zuxin Liu, Zhiwei Liu, Rithesh Murthy, Tulika Manoj Awalgaonkar, Jianguo Zhang, Weiran Yao, Ming Zhu, Shirley Kokane, Silvio Savarese, Huan Wang, Caiming Xiong, Shelby Heinecke. ACL Findings, 2025. <a href="https://github.com/SalesforceAIResearch/PersonaBench" class="github-link">[Github Repo]</a></p>
                     </div>
-                    <button class="view-more-btn" onclick="togglePublications('ai-agent')">View More</button>
-                </div>
-
-                <div class="publication-category">
-                    <h3>LLM Reasoning</h3>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="reasoning">
                         <p><a href="https://arxiv.org/abs/2411.04282" class="publication-link">Language Models are Hidden Reasoners: Unlocking Latent Reasoning Capabilities via Self-Rewarding</a>, by Haolin Chen, Yihao Feng, Zuxin Liu, Weiran Yao, Akshara Prabhakar, Shelby Heinecke, Ricky Ho, Phil Mui, Silvio Savarese, Caiming Xiong, Huan Wang. Arxiv, 2024.</p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="reasoning">
                         <p><a href="https://arxiv.org/abs/2410.18528" class="publication-link">PRACT: Optimizing Principled Reasoning and Acting of LLM Agent</a>, by Zhiwei Liu, Weiran Yao, Jianguo Zhang, Rithesh Murthy, Liangwei Yang, Zuxin Liu, Tian Lan, Ming Zhu, Juntao Tan, Shirley Kokane, Thai Hoang, Juan Carlos Niebles, Shelby Heinecke, Huan Wang, Silvio Savarese, Caiming Xiong. SIG CoNLL, 2024.</p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="reasoning">
                         <p><a href="https://arxiv.org/abs/2412.05479" class="publication-link">LATTE: Learning to Think with Vision Specialists</a>, by Zixian Ma, Jianguo Zhang, Zhiwei Liu, Jieyu Zhang, Juntao Tan, Manli Shu, Juan Carlos Niebles, Shelby Heinecke, Huan Wang, Caiming Xiong, Ranjay Krishna, Silvio Savarese. Arxiv, 2024.</p>
                     </div>
-                </div>
-
-                <div class="publication-category publication-category-hidden">
-                    <h3>Reinforcement Learning</h3>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="rl">
                         <p><a href="https://proceedings.mlr.press/v97/wang19o.html" class="publication-link">On the Generalization Gap in Reparameterizable Reinforcement Learning</a>, by Huan Wang, Stephan Zheng, Caiming Xiong, Richard Socher. ICML, 2019.</p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="rl">
                         <p><a href="https://proceedings.neurips.cc/paper/2021/hash/e61eaa38aed621dd776d0e67cfeee366-Abstract.html" class="publication-link">Policy Finetuning: Bridging Sample-Efficient Offline and Online Reinforcement Learning</a>, by Tengyang Xie, Nan Jiang, Huan Wang, Caiming Xiong, Yu Bai. NeurIPS, 2021.</p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="rl">
                         <p><a href="https://arxiv.org/abs/2102.11494" class="publication-link">Sample-Efficient Learning of Stackelberg Equilibria in General-Sum Games</a>, by Yu Bai, Chi Jin, Huan Wang, and Caiming Xiong. NeurIPS, 2021.</p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="rl">
                         <p><a href="https://arxiv.org/abs/2108.13976" class="publication-link">WarpDrive: Extremely Fast End-to-End Deep Multi-Agent Reinforcement Learning on a GPU</a>, by Tian Lan, Sunil Srinivasa, Huan Wang, Stephan Zheng. Arxiv, 2021. <a href="https://github.com/salesforce/warp-drive" class="github-link">[Github Repo]</a></p>
                     </div>
-                </div>
-
-                <div class="publication-category publication-category-hidden">
-                    <h3>Uncertainty Estimation</h3>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="theory">
                         <p><a href="https://proceedings.mlr.press/v202/bhatnagar23a.html" class="publication-link">Improved Online Conformal Prediction via Strongly Adaptive Online Learning</a>, by Aadyot Bhatnagar, Huan Wang, Caiming Xiong, Yu Bai. ICML, 2023.</p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="theory">
                         <p><a href="https://arxiv.org/abs/2106.05515" class="publication-link">Understanding the Under-Coverage Bias in Uncertainty Estimation</a>, by Yu Bai, Song Mei, Huan Wang, Caiming Xiong. NeurIPS, 2021.</p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="theory">
                         <p><a href="https://arxiv.org/abs/2102.10809" class="publication-link">Localized Calibration: Metrics and Recalibration</a>, by Rachel Luo, Aadyot Bhatnagar, Huan Wang, Caiming Xiong, Silvio Savarese, Yu Bai, Shengjia Zhao, Stefano Ermon. Arxiv, 2021.</p>
                     </div>
-                </div>
-
-                <div class="publication-category publication-category-hidden">
-                    <h3>Natural Language Processing</h3>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="theory">
                         <p><a href="https://arxiv.org/abs/2010.12885" class="publication-link">Unsupervised Paraphrasing with Pretrained Language Models</a>, by Tong Niu, Semih Yavuz, Yingbo Zhou, Nitish Shirish Keskar, Huan Wang and Caiming Xiong. EMNLP, 2021.</p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="theory">
                         <p><a href="https://aclanthology.org/2021.findings-acl.434.pdf" class="publication-link">BatchMixup: Improving Training by Interpolating Hidden States of the Entire Mini-batch</a>, by Wenpeng Yin, Huan Wang, Jin Qu, Caiming Xiong. ACL.Findings, 2021.</p>
                     </div>
-                </div>
-
-                <div class="publication-category publication-category-hidden">
-                    <h3>Neural Network and Deep Learning</h3>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="theory">
                         <p><a href="https://arxiv.org/abs/2106.03357" class="publication-link">Evaluating State-of-the-Art Classification Models Against Bayes Optimality</a>, by Ryan Theisen, Huan Wang, Lav R Varshney, Caiming Xiong, and Richard Socher. NeurIPS, 2021.</p>
                     </div>
-                    <div class="publication-item">
+                    <div class="publication-item" data-categories="theory">
                         <p><a href="https://arxiv.org/abs/2012.14193" class="publication-link">Catastrophic Fisher Explosion: Early Phase Fisher Matrix Impacts Generalization</a>, by Stanislaw Jastrzebski, Devansh Arpit, Oliver Astrand, Giancarlo Kerg, Huan Wang, Caiming Xiong, Richard Socher, Kyunghyun Cho, Krzysztof Geras. ICML, 2021.</p>
                     </div>
                 </div>
-
-                <div class="publication-category publication-category-hidden">
-                    <h3>Sparse Representation and Dictionary Learning</h3>
-                    <div class="publication-item">
-                        <p><a href="http://jmlr.csail.mit.edu/proceedings/papers/v23/spielman12/spielman12.pdf" class="publication-link">Exact Recovery of Sparsely-Used Dictionaries</a>, by Daniel Spielman, Huan Wang, and John Wright. <span class="award">Best paper award</span> of the 25th Conference on Learning Theory (COLT), Jun.2012.</p>
-                    </div>
-                </div>
-
-                <button class="view-more-categories-btn" onclick="togglePublicationCategories()">View More Topics</button>
             </div>
         </div>
     </section>
@@ -857,7 +858,7 @@
         <div class="container">
             <header class="section-header">
                 <h2 class="section-title">Music</h2>
-                <p class="section-subtitle">不会写代码的研究员不是好歌手 — Original compositions, instrumentals, and covers</p>
+                <p class="section-subtitle">不会写代码的研究员不是好歌手</p>
             </header>
 
             <!-- Artist platforms -->
@@ -880,17 +881,17 @@
 
             <!-- Filter buttons -->
             <div class="music-filters">
-                <button class="music-filter-btn active" data-filter="all">All</button>
+                <button class="music-filter-btn active" data-filter="featured">Featured</button>
+                <button class="music-filter-btn" data-filter="all">All Tracks</button>
                 <button class="music-filter-btn" data-filter="original">Originals</button>
                 <button class="music-filter-btn" data-filter="instrumental">Instrumental</button>
                 <button class="music-filter-btn" data-filter="cover">Covers / 翻唱</button>
-                <button class="music-filter-btn" data-filter="video">With Video</button>
             </div>
 
             <!-- Unified track grid -->
             <div class="music-grid-unified">
                 <!-- 再见容易再见难 -->
-                <div class="music-card" data-categories="original video">
+                <div class="music-card" data-categories="original video featured">
                     <div class="music-card-media">
                         <div class="youtube-preview" data-youtube-id="Ma0eBSMxqMA">
                             <img src="https://img.youtube.com/vi/Ma0eBSMxqMA/maxresdefault.jpg" alt="再见容易再见难" class="youtube-thumbnail" loading="lazy">
@@ -905,7 +906,7 @@
                 </div>
 
                 <!-- 下雪的纽约 -->
-                <div class="music-card" data-categories="original video">
+                <div class="music-card" data-categories="original video featured">
                     <div class="music-card-media">
                         <div class="youtube-preview" data-youtube-id="x6Flf9REXJU">
                             <img src="https://img.youtube.com/vi/x6Flf9REXJU/maxresdefault.jpg" alt="下雪的纽约" class="youtube-thumbnail" loading="lazy">
@@ -920,7 +921,7 @@
                 </div>
 
                 <!-- 涟漪 - featured -->
-                <div class="music-card" data-categories="original video">
+                <div class="music-card" data-categories="original video featured">
                     <div class="music-card-media">
                         <div class="youtube-preview" data-youtube-id="IMYwLQLFXio">
                             <img src="https://img.youtube.com/vi/IMYwLQLFXio/maxresdefault.jpg" alt="涟漪 - A Ripple of Love" class="youtube-thumbnail" loading="lazy">
@@ -940,7 +941,7 @@
                 </div>
 
                 <!-- 月光回忆 -->
-                <div class="music-card" data-categories="original video">
+                <div class="music-card" data-categories="original video featured">
                     <div class="music-card-media">
                         <div class="youtube-preview" data-youtube-id="WCx9CAWc4ks">
                             <img src="https://img.youtube.com/vi/WCx9CAWc4ks/maxresdefault.jpg" alt="月光回忆" class="youtube-thumbnail" loading="lazy">
@@ -955,7 +956,7 @@
                 </div>
 
                 <!-- 桎梏 -->
-                <div class="music-card" data-categories="original video">
+                <div class="music-card" data-categories="original video featured">
                     <div class="music-card-media">
                         <div class="youtube-preview" data-youtube-id="LlxoXS9bANY">
                             <img src="https://img.youtube.com/vi/LlxoXS9bANY/maxresdefault.jpg" alt="桎梏" class="youtube-thumbnail" loading="lazy">
@@ -970,7 +971,7 @@
                 </div>
 
                 <!-- 最后我们还是变成了曾经讨厌的那个人 -->
-                <div class="music-card" data-categories="original video">
+                <div class="music-card" data-categories="original video featured">
                     <div class="music-card-media">
                         <div class="youtube-preview" data-youtube-id="pfaITIVkvN0">
                             <img src="https://img.youtube.com/vi/pfaITIVkvN0/maxresdefault.jpg" alt="最后我们还是变成了曾经讨厌的那个人" class="youtube-thumbnail" loading="lazy">
@@ -984,7 +985,7 @@
                 </div>
 
                 <!-- 生活不止眼前的苟且 -->
-                <div class="music-card" data-categories="original video">
+                <div class="music-card" data-categories="original video featured">
                     <div class="music-card-media">
                         <div class="youtube-preview" data-youtube-id="HXyhaL_nC0M">
                             <img src="https://img.youtube.com/vi/HXyhaL_nC0M/maxresdefault.jpg" alt="生活不止眼前的苟且" class="youtube-thumbnail" loading="lazy">
@@ -998,7 +999,7 @@
                 </div>
 
                 <!-- 追忆 -->
-                <div class="music-card" data-categories="instrumental video">
+                <div class="music-card" data-categories="instrumental video featured">
                     <div class="music-card-media">
                         <div class="youtube-preview" data-youtube-id="G9094ppQS8M">
                             <img src="https://img.youtube.com/vi/G9094ppQS8M/maxresdefault.jpg" alt="追忆" class="youtube-thumbnail" loading="lazy">
@@ -1013,7 +1014,7 @@
                 </div>
 
                 <!-- 好久不见 -->
-                <div class="music-card" data-categories="original video">
+                <div class="music-card" data-categories="original video featured">
                     <div class="music-card-media">
                         <div class="youtube-preview" data-youtube-id="JWoIlTmV4wE">
                             <img src="https://img.youtube.com/vi/JWoIlTmV4wE/maxresdefault.jpg" alt="好久不见" class="youtube-thumbnail" loading="lazy">
@@ -1241,58 +1242,34 @@
     </footer>
 
     <script>
-        // Publication toggle functionality
-        function togglePublications(categoryId) {
-            const category = document.querySelector(`[onclick="togglePublications('${categoryId}')"]`).parentElement;
-            const button = category.querySelector('.view-more-btn');
-            const allItems = category.querySelectorAll('.publication-item');
-            
-            // Check if we're currently showing all items (expanded state)
-            const hiddenItems = category.querySelectorAll('.publication-hidden');
-            
-            if (hiddenItems.length === 0) {
-                // Currently expanded - hide items beyond the first 3
-                allItems.forEach((item, index) => {
-                    if (index >= 3) {
-                        item.style.display = 'none';
-                        item.classList.add('publication-hidden');
-                    }
-                });
-                button.textContent = 'View More';
-            } else {
-                // Currently collapsed - show all items
-                allItems.forEach(item => {
-                    item.style.display = 'block';
-                    item.classList.remove('publication-hidden');
-                });
-                button.textContent = 'View Less';
-            }
-        }
+        // Publication filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const pubFilterButtons = document.querySelectorAll('.pub-filter-btn');
+            const pubItems = document.querySelectorAll('.publication-list .publication-item');
 
-        // Publication categories toggle functionality
-        function togglePublicationCategories() {
-            const button = document.querySelector('.view-more-categories-btn');
-            const hiddenCategories = document.querySelectorAll('.publication-category-hidden');
-            
-            if (hiddenCategories.length > 0) {
-                // Show hidden categories
-                hiddenCategories.forEach(category => {
-                    category.style.display = 'block';
-                    category.classList.remove('publication-category-hidden');
+            function applyPubFilter(filter, btn) {
+                if (btn) {
+                    pubFilterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                }
+                pubItems.forEach(item => {
+                    const cats = (item.getAttribute('data-categories') || '').split(' ');
+                    const show = filter === 'all' || cats.includes(filter);
+                    item.style.display = show ? '' : 'none';
                 });
-                button.textContent = 'View Less Topics';
-            } else {
-                // Hide categories beyond the first 3
-                const allCategories = document.querySelectorAll('.publication-category');
-                const categoriesToHide = Array.from(allCategories).slice(3);
-                
-                categoriesToHide.forEach(category => {
-                    category.style.display = 'none';
-                    category.classList.add('publication-category-hidden');
-                });
-                button.textContent = 'View More Topics';
             }
-        }
+
+            pubFilterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    applyPubFilter(btn.getAttribute('data-filter'), btn);
+                });
+            });
+
+            const activePubBtn = document.querySelector('.pub-filter-btn.active');
+            if (activePubBtn) {
+                applyPubFilter(activePubBtn.getAttribute('data-filter'), null);
+            }
+        });
 
         // Mobile navigation toggle
         const navToggle = document.getElementById('nav-toggle');
@@ -1328,11 +1305,17 @@
             });
         });
 
-        // Update active nav link on scroll
+        // Update active nav link on scroll + toggle scrolled state
+        const navbarEl = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.nav-link');
-            
+
+            // Scrolled-state class for the navbar
+            if (navbarEl) {
+                navbarEl.classList.toggle('scrolled', window.scrollY > 50);
+            }
+
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 100;
@@ -1340,7 +1323,7 @@
                     current = section.getAttribute('id');
                 }
             });
-            
+
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === '#' + current) {
@@ -1414,6 +1397,19 @@
             const filterButtons = document.querySelectorAll('.filter-btn');
             const projectCards = document.querySelectorAll('.project-card');
 
+            function applyFilter(filter) {
+                projectCards.forEach(card => {
+                    const shouldShow = filter === 'all' || card.classList.contains(filter);
+                    card.style.display = shouldShow ? 'block' : 'none';
+                });
+            }
+
+            // Apply default active filter on initial load
+            const activeBtn = document.querySelector('.filter-btn.active');
+            if (activeBtn) {
+                applyFilter(activeBtn.getAttribute('data-filter'));
+            }
+
             // Use event delegation for better performance
             document.addEventListener('click', function(e) {
                 if (e.target.classList.contains('filter-btn')) {
@@ -1437,6 +1433,45 @@
             });
         });
 
+        // Publication venue chips - extract venue from each publication entry
+        document.addEventListener('DOMContentLoaded', function() {
+            const venuePatterns = [
+                /\bNeurIPS Datasets and Benchmarks Track\b/i,
+                /\bNeurIPS\b/i, /\bICML\b/i, /\bICLR\b/i, /\bACL Findings\b/i, /\bACL\b/i,
+                /\bEMNLP\b/i, /\bNAACL\b/i, /\bCoNLL\b/i, /\bCOLT\b/i, /\bCVPR\b/i,
+                /\bArxiv\b/i
+            ];
+            document.querySelectorAll('.publication-item > p').forEach(p => {
+                const text = p.textContent;
+                for (const pat of venuePatterns) {
+                    const m = text.match(pat);
+                    if (m) {
+                        const chip = document.createElement('span');
+                        chip.className = 'venue-chip venue-' + m[0].toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+                        chip.textContent = m[0];
+                        p.insertBefore(chip, p.firstChild);
+                        break;
+                    }
+                }
+            });
+        });
+
+        // Scroll-in fade for cards entering viewport
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!('IntersectionObserver' in window)) return;
+            const targets = document.querySelectorAll('.project-card, .featured-card, .music-card, .publication-item, .news-list li');
+            targets.forEach(el => el.classList.add('reveal'));
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+            targets.forEach(el => observer.observe(el));
+        });
+
         // Music section: filter + single-audio playback
         document.addEventListener('DOMContentLoaded', function() {
             const musicFilterButtons = document.querySelectorAll('.music-filter-btn');
@@ -1445,16 +1480,27 @@
 
             musicFilterButtons.forEach(btn => {
                 btn.addEventListener('click', () => {
-                    const filter = btn.getAttribute('data-filter');
-                    musicFilterButtons.forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    musicCards.forEach(card => {
-                        const cats = (card.getAttribute('data-categories') || '').split(' ');
-                        const show = filter === 'all' || cats.includes(filter);
-                        card.style.display = show ? '' : 'none';
-                    });
+                    applyMusicFilter(btn.getAttribute('data-filter'), btn);
                 });
             });
+
+            function applyMusicFilter(filter, btn) {
+                if (btn) {
+                    musicFilterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                }
+                musicCards.forEach(card => {
+                    const cats = (card.getAttribute('data-categories') || '').split(' ');
+                    const show = filter === 'all' || cats.includes(filter);
+                    card.style.display = show ? '' : 'none';
+                });
+            }
+
+            // Apply the default active filter on initial load
+            const activeMusicBtn = document.querySelector('.music-filter-btn.active');
+            if (activeMusicBtn) {
+                applyMusicFilter(activeMusicBtn.getAttribute('data-filter'), null);
+            }
 
             // Pause other audios when one starts
             audios.forEach(a => {
