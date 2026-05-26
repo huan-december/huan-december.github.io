@@ -857,176 +857,344 @@
         <div class="container">
             <header class="section-header">
                 <h2 class="section-title">Music</h2>
-                <p class="section-subtitle">不会写代码的研究员不是好歌手 - Original compositions and musical works</p>
+                <p class="section-subtitle">不会写代码的研究员不是好歌手 — Original compositions, instrumentals, and covers</p>
             </header>
-            <div class="music-content">
-                <div class="music-section">
-                    <h3>My Compositions (POP and NEW AGE)</h3>
-                    <div class="music-grid">
-                        <div class="music-item">
-                            <h4>最后我们还是变成了曾经讨厌的那个人</h4>
-                            <div class="youtube-preview" data-youtube-id="pfaITIVkvN0">
-                                <img src="https://img.youtube.com/vi/pfaITIVkvN0/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
-                                <div class="youtube-overlay">
-                                    <i class="fab fa-youtube"></i>
-                                    <span>Watch on YouTube</span>
-                                </div>
-                            </div>
+
+            <!-- Artist platforms -->
+            <div class="music-platforms">
+                <a href="https://www.youtube.com/user/JoyousPrince/" class="music-platform youtube" rel="noopener external" target="_blank" aria-label="Subscribe to JoyousPrince on YouTube">
+                    <div class="music-platform-icon"><i class="fab fa-youtube" aria-hidden="true"></i></div>
+                    <div class="music-platform-text">
+                        <span class="music-platform-name">JoyousPrince</span>
+                        <span class="music-platform-label">YouTube Channel</span>
+                    </div>
+                </a>
+                <a href="https://music.163.com/#/artist?id=12275358" class="music-platform netease" rel="noopener external" target="_blank" aria-label="Follow Huan Wang on NetEase Music">
+                    <div class="music-platform-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
+                    <div class="music-platform-text">
+                        <span class="music-platform-name">Huan Wang</span>
+                        <span class="music-platform-label">NetEase 网易音乐人</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Filter buttons -->
+            <div class="music-filters">
+                <button class="music-filter-btn active" data-filter="all">All</button>
+                <button class="music-filter-btn" data-filter="original">Originals</button>
+                <button class="music-filter-btn" data-filter="instrumental">Instrumental</button>
+                <button class="music-filter-btn" data-filter="cover">Covers / 翻唱</button>
+                <button class="music-filter-btn" data-filter="video">With Video</button>
+            </div>
+
+            <!-- Unified track grid -->
+            <div class="music-grid-unified">
+                <!-- 再见容易再见难 -->
+                <div class="music-card" data-categories="original video">
+                    <div class="music-card-media">
+                        <div class="youtube-preview" data-youtube-id="Ma0eBSMxqMA">
+                            <img src="https://img.youtube.com/vi/Ma0eBSMxqMA/maxresdefault.jpg" alt="再见容易再见难" class="youtube-thumbnail" loading="lazy">
+                            <div class="youtube-overlay"><i class="fab fa-youtube"></i><span>Watch</span></div>
                         </div>
-                        <div class="music-item">
-                            <h4>好久不见</h4>
-                            <a href="WebContent/LongTimeNoSee.mp3" class="btn btn-secondary">Listen</a>
+                        <span class="music-badge">New</span>
+                    </div>
+                    <div class="music-card-body">
+                        <h4>再见容易再见难</h4>
+                        <span class="music-tag">Original · Pop</span>
+                    </div>
+                </div>
+
+                <!-- 下雪的纽约 -->
+                <div class="music-card" data-categories="original video">
+                    <div class="music-card-media">
+                        <div class="youtube-preview" data-youtube-id="x6Flf9REXJU">
+                            <img src="https://img.youtube.com/vi/x6Flf9REXJU/maxresdefault.jpg" alt="下雪的纽约" class="youtube-thumbnail" loading="lazy">
+                            <div class="youtube-overlay"><i class="fab fa-youtube"></i><span>Watch</span></div>
                         </div>
-                        <div class="music-item">
-                            <h4>冷眼人间</h4>
-                            <a href="WebContent/ColdEye.mp3" class="btn btn-secondary">Listen</a>
+                        <span class="music-badge">New</span>
+                    </div>
+                    <div class="music-card-body">
+                        <h4>下雪的纽约</h4>
+                        <span class="music-tag">Original · Pop</span>
+                    </div>
+                </div>
+
+                <!-- 涟漪 - featured -->
+                <div class="music-card" data-categories="original video">
+                    <div class="music-card-media">
+                        <div class="youtube-preview" data-youtube-id="IMYwLQLFXio">
+                            <img src="https://img.youtube.com/vi/IMYwLQLFXio/maxresdefault.jpg" alt="涟漪 - A Ripple of Love" class="youtube-thumbnail" loading="lazy">
+                            <div class="youtube-overlay"><i class="fab fa-youtube"></i><span>Watch</span></div>
                         </div>
-                        <div class="music-item">
-                            <h4>流年</h4>
-                            <a href="WebContent/FleetingTime.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>暖冬</h4>
-                            <a href="WebContent/WarmWinter.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>月光回忆</h4>
-                            <div class="youtube-preview" data-youtube-id="WCx9CAWc4ks">
-                                <img src="https://img.youtube.com/vi/WCx9CAWc4ks/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
-                                <div class="youtube-overlay">
-                                    <i class="fab fa-youtube"></i>
-                                    <span>Watch on YouTube</span>
-                                </div>
-                            </div>
-                            <a href="WebContent/月光回忆.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>桎梏</h4>
-                            <div class="youtube-preview" data-youtube-id="LlxoXS9bANY">
-                                <img src="https://img.youtube.com/vi/LlxoXS9bANY/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
-                                <div class="youtube-overlay">
-                                    <i class="fab fa-youtube"></i>
-                                    <span>Watch on YouTube</span>
-                                </div>
-                            </div>
-                            <a href="WebContent/桎梏.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>生活不止眼前的苟且</h4>
-                            <div class="youtube-preview" data-youtube-id="HXyhaL_nC0M">
-                                <img src="https://img.youtube.com/vi/HXyhaL_nC0M/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
-                                <div class="youtube-overlay">
-                                    <i class="fab fa-youtube"></i>
-                                    <span>Watch on YouTube</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="music-item">
-                            <h4>追忆</h4>
-                            <div class="youtube-preview" data-youtube-id="G9094ppQS8M">
-                                <img src="https://img.youtube.com/vi/G9094ppQS8M/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
-                                <div class="youtube-overlay">
-                                    <i class="fab fa-youtube"></i>
-                                    <span>Watch on YouTube</span>
-                                </div>
-                            </div>
-                            <a href="WebContent/memory_instrument.mp3" class="btn btn-secondary">Instrumental</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>涟漪-A Ripple of Love</h4>
-                            <div class="youtube-preview" data-youtube-id="IMYwLQLFXio">
-                                <img src="https://img.youtube.com/vi/IMYwLQLFXio/maxresdefault.jpg" alt="YouTube Video Preview" class="youtube-thumbnail">
-                                <div class="youtube-overlay">
-                                    <i class="fab fa-youtube"></i>
-                                    <span>Watch on YouTube</span>
-                                </div>
-                            </div>
-                            <a href="http://v.youku.com/v_show/id_XNTEwODYzOTEy.html" class="btn btn-secondary">MV (400K+ views)</a>
-                            <a href="WebContent/ARippleofLove.mp3" class="btn btn-secondary">Song</a>
-                            <a href="WebContent/ARippleofLoveInstruments.mp3" class="btn btn-secondary">Instruments</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>错过</h4>
-                            <a href="WebContent/错过.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>我们-钢琴轻音乐</h4>
-                            <a href="WebContent/我们-钢琴轻音乐.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>流年-钢琴轻音乐</h4>
-                            <a href="WebContent/liunian.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>MEMORY</h4>
-                            <a href="WebContent/Memory.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>LILIUM (remix)</h4>
-                            <a href="WebContent/Lilium-Final.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>WAITING IN DARKNESS</h4>
-                            <a href="WebContent/WaitingInDarkness.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>LIGHT MOOD</h4>
-                            <a href="WebContent/LightMood.mp3" class="btn btn-secondary">Listen</a>
+                        <span class="music-badge">400K+ views</span>
+                    </div>
+                    <div class="music-card-body">
+                        <h4>涟漪 — A Ripple of Love</h4>
+                        <span class="music-tag">Original · Pop</span>
+                        <audio controls preload="none"><source src="WebContent/ARippleofLove.mp3" type="audio/mpeg"></audio>
+                        <div class="music-extra-links">
+                            <a href="WebContent/ARippleofLoveInstruments.mp3">Instrumental</a>
+                            <a href="http://v.youku.com/v_show/id_XNTEwODYzOTEy.html" rel="noopener external" target="_blank">MV (Youku)</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="music-section">
-                    <h3>My Recordings / 翻唱</h3>
-                    <div class="music-grid">
-                        <div class="music-item">
-                            <h4>你是我的刘若英</h4>
-                            <a href="musicplay.html" class="btn btn-secondary">Listen</a>
+                <!-- 月光回忆 -->
+                <div class="music-card" data-categories="original video">
+                    <div class="music-card-media">
+                        <div class="youtube-preview" data-youtube-id="WCx9CAWc4ks">
+                            <img src="https://img.youtube.com/vi/WCx9CAWc4ks/maxresdefault.jpg" alt="月光回忆" class="youtube-thumbnail" loading="lazy">
+                            <div class="youtube-overlay"><i class="fab fa-youtube"></i><span>Watch</span></div>
                         </div>
-                        <div class="music-item">
-                            <h4>剪爱</h4>
-                            <a href="WebContent/剪爱-320.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>离开你以后</h4>
-                            <a href="WebContent/TimeAfterILeftYou.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>Everything I Do</h4>
-                            <a href="WebContent/EverythingIDo.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>Season In The Sun</h4>
-                            <a href="WebContent/Seasoninthesun.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>Mandy</h4>
-                            <a href="WebContent/Mandy5-reverb.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
-                        <div class="music-item">
-                            <h4>啦啦歌</h4>
-                            <a href="WebContent/Lalala.mp3" class="btn btn-secondary">Listen</a>
-                        </div>
+                    </div>
+                    <div class="music-card-body">
+                        <h4>月光回忆</h4>
+                        <span class="music-tag">Original · Pop</span>
+                        <audio controls preload="none"><source src="WebContent/月光回忆.mp3" type="audio/mpeg"></audio>
                     </div>
                 </div>
 
-                <div class="music-section">
-                    <h3>YouTube Channel</h3>
-                    <div class="youtube-section">
-                        <p>Subscribe to my YouTube channel for more music content:</p>
-                        <a href="https://www.youtube.com/user/JoyousPrince/" class="btn btn-primary" rel="noopener external" aria-label="Subscribe to JoyousPrince YouTube Channel">
-                            <i class="fab fa-youtube" aria-hidden="true"></i> JoyousPrince (@YouTube)
-                        </a>
+                <!-- 桎梏 -->
+                <div class="music-card" data-categories="original video">
+                    <div class="music-card-media">
+                        <div class="youtube-preview" data-youtube-id="LlxoXS9bANY">
+                            <img src="https://img.youtube.com/vi/LlxoXS9bANY/maxresdefault.jpg" alt="桎梏" class="youtube-thumbnail" loading="lazy">
+                            <div class="youtube-overlay"><i class="fab fa-youtube"></i><span>Watch</span></div>
+                        </div>
+                    </div>
+                    <div class="music-card-body">
+                        <h4>桎梏</h4>
+                        <span class="music-tag">Original · Pop</span>
+                        <audio controls preload="none"><source src="WebContent/桎梏.mp3" type="audio/mpeg"></audio>
                     </div>
                 </div>
 
-                <div class="music-section">
-                    <h3>NetEase Music Channe (网易音乐人)</h3>
-                    <div class="netease-section">
-                        <p>Follow my NetEase Music artist page for streaming my compositions:</p>
-                        <a href="https://music.163.com/#/artist?id=12275358" class="btn btn-primary" rel="noopener external" aria-label="Follow Huan Wang on NetEase Music">
-                            <i class="fas fa-music" aria-hidden="true"></i> Huan Wang (@NetEase Music)
-                        </a>
+                <!-- 最后我们还是变成了曾经讨厌的那个人 -->
+                <div class="music-card" data-categories="original video">
+                    <div class="music-card-media">
+                        <div class="youtube-preview" data-youtube-id="pfaITIVkvN0">
+                            <img src="https://img.youtube.com/vi/pfaITIVkvN0/maxresdefault.jpg" alt="最后我们还是变成了曾经讨厌的那个人" class="youtube-thumbnail" loading="lazy">
+                            <div class="youtube-overlay"><i class="fab fa-youtube"></i><span>Watch</span></div>
+                        </div>
+                    </div>
+                    <div class="music-card-body">
+                        <h4>最后我们还是变成了曾经讨厌的那个人</h4>
+                        <span class="music-tag">Original · Pop</span>
+                    </div>
+                </div>
+
+                <!-- 生活不止眼前的苟且 -->
+                <div class="music-card" data-categories="original video">
+                    <div class="music-card-media">
+                        <div class="youtube-preview" data-youtube-id="HXyhaL_nC0M">
+                            <img src="https://img.youtube.com/vi/HXyhaL_nC0M/maxresdefault.jpg" alt="生活不止眼前的苟且" class="youtube-thumbnail" loading="lazy">
+                            <div class="youtube-overlay"><i class="fab fa-youtube"></i><span>Watch</span></div>
+                        </div>
+                    </div>
+                    <div class="music-card-body">
+                        <h4>生活不止眼前的苟且</h4>
+                        <span class="music-tag">Original · Pop</span>
+                    </div>
+                </div>
+
+                <!-- 追忆 -->
+                <div class="music-card" data-categories="instrumental video">
+                    <div class="music-card-media">
+                        <div class="youtube-preview" data-youtube-id="G9094ppQS8M">
+                            <img src="https://img.youtube.com/vi/G9094ppQS8M/maxresdefault.jpg" alt="追忆" class="youtube-thumbnail" loading="lazy">
+                            <div class="youtube-overlay"><i class="fab fa-youtube"></i><span>Watch</span></div>
+                        </div>
+                    </div>
+                    <div class="music-card-body">
+                        <h4>追忆</h4>
+                        <span class="music-tag">Instrumental</span>
+                        <audio controls preload="none"><source src="WebContent/memory_instrument.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- 好久不见 -->
+                <div class="music-card" data-categories="original video">
+                    <div class="music-card-media">
+                        <div class="youtube-preview" data-youtube-id="JWoIlTmV4wE">
+                            <img src="https://img.youtube.com/vi/JWoIlTmV4wE/maxresdefault.jpg" alt="好久不见" class="youtube-thumbnail" loading="lazy">
+                            <div class="youtube-overlay"><i class="fab fa-youtube"></i><span>Watch</span></div>
+                        </div>
+                    </div>
+                    <div class="music-card-body">
+                        <h4>好久不见</h4>
+                        <span class="music-tag">Original · Pop</span>
+                        <audio controls preload="none"><source src="WebContent/LongTimeNoSee.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- 冷眼人间 -->
+                <div class="music-card" data-categories="original">
+                    <div class="music-card-media music-card-media-audio"><i class="fas fa-music"></i></div>
+                    <div class="music-card-body">
+                        <h4>冷眼人间</h4>
+                        <span class="music-tag">Original · Pop</span>
+                        <audio controls preload="none"><source src="WebContent/ColdEye.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- 流年 -->
+                <div class="music-card" data-categories="original">
+                    <div class="music-card-media music-card-media-audio"><i class="fas fa-music"></i></div>
+                    <div class="music-card-body">
+                        <h4>流年</h4>
+                        <span class="music-tag">Original · Pop</span>
+                        <audio controls preload="none"><source src="WebContent/FleetingTime.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- 暖冬 -->
+                <div class="music-card" data-categories="original">
+                    <div class="music-card-media music-card-media-audio"><i class="fas fa-music"></i></div>
+                    <div class="music-card-body">
+                        <h4>暖冬</h4>
+                        <span class="music-tag">Original · Pop</span>
+                        <audio controls preload="none"><source src="WebContent/WarmWinter.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- 错过 -->
+                <div class="music-card" data-categories="original">
+                    <div class="music-card-media music-card-media-audio"><i class="fas fa-music"></i></div>
+                    <div class="music-card-body">
+                        <h4>错过</h4>
+                        <span class="music-tag">Original · Pop</span>
+                        <audio controls preload="none"><source src="WebContent/错过.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- 我们-钢琴轻音乐 -->
+                <div class="music-card" data-categories="instrumental">
+                    <div class="music-card-media music-card-media-audio"><i class="fas fa-music"></i></div>
+                    <div class="music-card-body">
+                        <h4>我们 — 钢琴轻音乐</h4>
+                        <span class="music-tag">Instrumental · Piano</span>
+                        <audio controls preload="none"><source src="WebContent/我们-钢琴轻音乐.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- 流年-钢琴轻音乐 -->
+                <div class="music-card" data-categories="instrumental">
+                    <div class="music-card-media music-card-media-audio"><i class="fas fa-music"></i></div>
+                    <div class="music-card-body">
+                        <h4>流年 — 钢琴轻音乐</h4>
+                        <span class="music-tag">Instrumental · Piano</span>
+                        <audio controls preload="none"><source src="WebContent/liunian.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- MEMORY -->
+                <div class="music-card" data-categories="instrumental">
+                    <div class="music-card-media music-card-media-audio"><i class="fas fa-music"></i></div>
+                    <div class="music-card-body">
+                        <h4>Memory</h4>
+                        <span class="music-tag">Instrumental · New Age</span>
+                        <audio controls preload="none"><source src="WebContent/Memory.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- LILIUM -->
+                <div class="music-card" data-categories="instrumental">
+                    <div class="music-card-media music-card-media-audio"><i class="fas fa-music"></i></div>
+                    <div class="music-card-body">
+                        <h4>Lilium (Remix)</h4>
+                        <span class="music-tag">Instrumental · New Age</span>
+                        <audio controls preload="none"><source src="WebContent/Lilium-Final.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- WAITING IN DARKNESS -->
+                <div class="music-card" data-categories="instrumental">
+                    <div class="music-card-media music-card-media-audio"><i class="fas fa-music"></i></div>
+                    <div class="music-card-body">
+                        <h4>Waiting in Darkness</h4>
+                        <span class="music-tag">Instrumental · New Age</span>
+                        <audio controls preload="none"><source src="WebContent/WaitingInDarkness.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- LIGHT MOOD -->
+                <div class="music-card" data-categories="instrumental">
+                    <div class="music-card-media music-card-media-audio"><i class="fas fa-music"></i></div>
+                    <div class="music-card-body">
+                        <h4>Light Mood</h4>
+                        <span class="music-tag">Instrumental · New Age</span>
+                        <audio controls preload="none"><source src="WebContent/LightMood.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- COVERS -->
+                <!-- 你是我的刘若英 -->
+                <div class="music-card" data-categories="cover">
+                    <div class="music-card-media music-card-media-audio cover"><i class="fas fa-microphone"></i></div>
+                    <div class="music-card-body">
+                        <h4>你是我的刘若英</h4>
+                        <span class="music-tag">Cover · 翻唱</span>
+                        <a href="musicplay.html" class="btn btn-secondary music-listen-btn">Listen</a>
+                    </div>
+                </div>
+
+                <!-- 剪爱 -->
+                <div class="music-card" data-categories="cover">
+                    <div class="music-card-media music-card-media-audio cover"><i class="fas fa-microphone"></i></div>
+                    <div class="music-card-body">
+                        <h4>剪爱</h4>
+                        <span class="music-tag">Cover · 翻唱</span>
+                        <audio controls preload="none"><source src="WebContent/剪爱-320.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- 离开你以后 -->
+                <div class="music-card" data-categories="cover">
+                    <div class="music-card-media music-card-media-audio cover"><i class="fas fa-microphone"></i></div>
+                    <div class="music-card-body">
+                        <h4>离开你以后</h4>
+                        <span class="music-tag">Cover · 翻唱</span>
+                        <audio controls preload="none"><source src="WebContent/TimeAfterILeftYou.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- Everything I Do -->
+                <div class="music-card" data-categories="cover">
+                    <div class="music-card-media music-card-media-audio cover"><i class="fas fa-microphone"></i></div>
+                    <div class="music-card-body">
+                        <h4>(Everything I Do) I Do It for You</h4>
+                        <span class="music-tag">Cover · 翻唱</span>
+                        <audio controls preload="none"><source src="WebContent/EverythingIDo.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- Season In The Sun -->
+                <div class="music-card" data-categories="cover">
+                    <div class="music-card-media music-card-media-audio cover"><i class="fas fa-microphone"></i></div>
+                    <div class="music-card-body">
+                        <h4>Season in the Sun</h4>
+                        <span class="music-tag">Cover · 翻唱</span>
+                        <audio controls preload="none"><source src="WebContent/Seasoninthesun.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- Mandy -->
+                <div class="music-card" data-categories="cover">
+                    <div class="music-card-media music-card-media-audio cover"><i class="fas fa-microphone"></i></div>
+                    <div class="music-card-body">
+                        <h4>Mandy</h4>
+                        <span class="music-tag">Cover · 翻唱</span>
+                        <audio controls preload="none"><source src="WebContent/Mandy5-reverb.mp3" type="audio/mpeg"></audio>
+                    </div>
+                </div>
+
+                <!-- 啦啦歌 -->
+                <div class="music-card" data-categories="cover">
+                    <div class="music-card-media music-card-media-audio cover"><i class="fas fa-microphone"></i></div>
+                    <div class="music-card-body">
+                        <h4>啦啦歌</h4>
+                        <span class="music-tag">Cover · 翻唱</span>
+                        <audio controls preload="none"><source src="WebContent/Lalala.mp3" type="audio/mpeg"></audio>
                     </div>
                 </div>
             </div>
@@ -1223,20 +1391,38 @@
             });
         });
 
+        // Fall back to hqdefault.jpg when maxresdefault.jpg is missing (older non-HD videos)
+        document.querySelectorAll('.youtube-thumbnail').forEach(img => {
+            img.addEventListener('error', function handler() {
+                if (img.src.includes('maxresdefault.jpg')) {
+                    img.src = img.src.replace('maxresdefault.jpg', 'hqdefault.jpg');
+                } else {
+                    img.removeEventListener('error', handler);
+                }
+            });
+            // YouTube returns a 120x90 grey placeholder (status 200) when maxres is missing,
+            // so also detect that case after load.
+            img.addEventListener('load', function() {
+                if (img.naturalWidth === 120 && img.src.includes('maxresdefault.jpg')) {
+                    img.src = img.src.replace('maxresdefault.jpg', 'hqdefault.jpg');
+                }
+            });
+        });
+
         // Project filter functionality - Optimized
         document.addEventListener('DOMContentLoaded', function() {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const projectCards = document.querySelectorAll('.project-card');
-            
+
             // Use event delegation for better performance
             document.addEventListener('click', function(e) {
                 if (e.target.classList.contains('filter-btn')) {
                     const filter = e.target.getAttribute('data-filter');
-                    
+
                     // Update active button
                     filterButtons.forEach(btn => btn.classList.remove('active'));
                     e.target.classList.add('active');
-                    
+
                     // Filter projects with requestAnimationFrame for smooth animation
                     requestAnimationFrame(() => {
                         projectCards.forEach(card => {
@@ -1248,6 +1434,33 @@
                         });
                     });
                 }
+            });
+        });
+
+        // Music section: filter + single-audio playback
+        document.addEventListener('DOMContentLoaded', function() {
+            const musicFilterButtons = document.querySelectorAll('.music-filter-btn');
+            const musicCards = document.querySelectorAll('.music-card');
+            const audios = document.querySelectorAll('.music-card audio');
+
+            musicFilterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.getAttribute('data-filter');
+                    musicFilterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    musicCards.forEach(card => {
+                        const cats = (card.getAttribute('data-categories') || '').split(' ');
+                        const show = filter === 'all' || cats.includes(filter);
+                        card.style.display = show ? '' : 'none';
+                    });
+                });
+            });
+
+            // Pause other audios when one starts
+            audios.forEach(a => {
+                a.addEventListener('play', () => {
+                    audios.forEach(other => { if (other !== a) other.pause(); });
+                });
             });
         });
     </script>

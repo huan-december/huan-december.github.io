@@ -1111,6 +1111,254 @@ body {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* ===== Reorganized Music Section ===== */
+
+.music-platforms {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.music-platform {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 14px;
+    backdrop-filter: blur(15px);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 240px;
+}
+
+.music-platform:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.music-platform-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    flex-shrink: 0;
+}
+
+.music-platform.youtube .music-platform-icon {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+}
+
+.music-platform.netease .music-platform-icon {
+    background: linear-gradient(135deg, #ec4141, #a30505);
+}
+
+.music-platform-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.music-platform-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.music-platform-label {
+    font-size: 0.8rem;
+    opacity: 0.85;
+}
+
+.music-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.music-filter-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    backdrop-filter: blur(10px);
+}
+
+.music-filter-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.music-filter-btn.active {
+    background: #fbbf24;
+    border-color: #fbbf24;
+    color: #1e293b;
+    box-shadow: 0 4px 14px rgba(251, 191, 36, 0.4);
+}
+
+.music-grid-unified {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.music-card {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.music-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.22);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+}
+
+.music-card-media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.music-card-media .youtube-preview {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    aspect-ratio: auto;
+}
+
+.music-card-media .youtube-preview:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.music-card-media-audio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5));
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 3rem;
+}
+
+.music-card-media-audio.cover {
+    background: linear-gradient(135deg, rgba(244, 114, 182, 0.5), rgba(251, 146, 60, 0.5));
+}
+
+.music-badge {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: #fbbf24;
+    color: #1e293b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.6rem;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+
+.music-card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex: 1;
+}
+
+.music-card-body h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    line-height: 1.35;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.music-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fbbf24;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.music-card-body audio {
+    width: 100%;
+    margin-top: 0.25rem;
+    border-radius: 8px;
+}
+
+.music-card-body audio::-webkit-media-controls-panel {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.music-listen-btn {
+    align-self: flex-start;
+    margin-top: 0.25rem;
+}
+
+.music-extra-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    font-size: 0.85rem;
+}
+
+.music-extra-links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    text-decoration-color: rgba(251, 191, 36, 0.6);
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+.music-extra-links a:hover {
+    color: #fbbf24;
+}
+
+@media (max-width: 480px) {
+    .music-platform {
+        min-width: unset;
+        width: 100%;
+    }
+    .music-grid-unified {
+        grid-template-columns: 1fr;
+    }
+}
+
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
