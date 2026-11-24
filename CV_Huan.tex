@@ -42,7 +42,7 @@
     \usepackage{lmodern}
 \fi
 
-\usepackage[default, type1]{sourcesanspro} 
+\usepackage[default, type1]{sourcesanspro}
 
 % Settings:
 \AtBeginEnvironment{adjustwidth}{\partopsep0pt}
@@ -55,7 +55,7 @@
 \let\ps@customFooterStyle\ps@plain
 \patchcmd{\ps@customFooterStyle}{\thepage}{
     \color{gray}\textit{\small Huan Wang - Page \thepage{} of \pageref*{LastPage}}
-}{}{} 
+}{}{}
 \makeatother
 \pagestyle{customFooterStyle}
 
@@ -145,7 +145,7 @@
         \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in May 2026}\hspace{\widthof{Last updated in May 2026}}
+        \small\color{gray}\textit{Last updated in November 2026}\hspace{\widthof{Last updated in November 2026}}
     }}}%
   }%
 }%
@@ -209,7 +209,7 @@
     \begin{threecolentry}{\textbf{M.Phil.}}{
         2005--2007
     }
-        \textbf{The Chinese University of Hong Kong}, Information Engineering 
+        \textbf{The Chinese University of Hong Kong}, Information Engineering
         \begin{highlights}
             \item Advisor: \href{https://scholar.google.com/citations?user=qpBtpGsAAAAJ&hl=en}{Prof. Xiaoou Tang}, \href{https://www.comp.nus.edu.sg/cs/people/yansc/}{Prof. Shuicheng Yan}, \href{https://scholar.google.com/citations?user=sKauaAwAAAAJ&hl=zh-CN}{Prof. Jianzhuang Liu}
             \item Research on face recognition, manifold learning, subspace learning, semi-supervised learning
@@ -235,7 +235,10 @@
     }
         \textbf{\color{primaryColor}Senior Director}, Salesforce Research
         \begin{highlights}
-            \item Large Action Models (xLAM), AI Agents, Reasoning, Planning, SWE Agents, Agentforce
+            \item \textbf{Research owner of Koa post-training}, Salesforce's first CRM reasoning model for Agentforce, co-engineered with NVIDIA: post-trained Nemotron-3-Super-120B with SFT and RL (GRPO) on fully synthetic data; served in production. \href{https://arxiv.org/abs/2609.15066}{[Paper]}
+            \item Launched publicly in September 2026 with quotes from Marc Benioff and Jensen Huang. \href{https://www.salesforce.com/news/press-releases/2026/09/15/koa-reasoning-model/}{[Press Release]}, \href{https://www.salesforce.com/agentforce/koa/}{[Product]}, \href{https://www.salesforce.com/news/stories/why-we-post-trained-our-own-reasoning-model/}{[Story]}
+            \item Built the specification-driven RL pipeline that turns Agent Script specs into persona-conditioned multi-turn environments with tool-use rewards.
+            \item Earlier: Large Action Models (xLAM), reasoning, planning, SWE agents, and Agentforce
         \end{highlights}
     \end{twocolentry}
 
@@ -317,7 +320,7 @@
         \begin{highlights}
             \item Taught the "Machine Learning" class.
         \end{highlights}
-    \end{twocolentry}    
+    \end{twocolentry}
 
     \vspace{0.12 cm}
 
@@ -330,7 +333,7 @@
         \begin{highlights}
             \item Taught the "Algorithm Design" class.
         \end{highlights}
-    \end{twocolentry}    
+    \end{twocolentry}
 
     \vspace{0.12 cm}
 
@@ -381,6 +384,7 @@
     \begin{onecolentry}
         \textbf{Large Language Models (LLMs)}
         \begin{highlightsforbulletentries}
+            \item \href{https://arxiv.org/abs/2609.15066}{Salesforce Koa: An Enterprise Language Model for Agentic Tool Use.} arXiv, 2026. (\textit{last author; research owner of Koa post-training}).
             \item \href{https://arxiv.org/pdf/2504.03601}{APIGen-MT: Agentic Pipeline for Multi-Turn Data Generation via Simulated Agent-Human Interplay.} NeurIPS Datasets \& Benchmarks Track, 2025. (\textit{co-corresponding author}). \href{https://huggingface.co/datasets/Salesforce/APIGen-MT-5k}{[Data]}, \href{https://huggingface.co/collections/Salesforce/xlam-2-67ef5be12949d8dcdae354c4}{[Model]}
             \item \href{https://proceedings.neurips.cc/paper_files/paper/2024/file/61cce86d180b1184949e58939c4f983d-Paper-Datasets_and_Benchmarks_Track.pdf}{APIGen: Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets.} NeurIPS, 2024. \href{https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k}{[Data]}, \href{https://huggingface.co/collections/Salesforce/xlam-models-65f00e2a0a63bbcd1c2dade4}{[Model]}
             \item \href{https://arxiv.org/abs/2409.03215}{xLAM: A Family of Large Action Models to Empower AI Agent Systems.} NAACL, 2024. (\textit{co-corresponding author}). \href{https://github.com/SalesforceAIResearch/xLAM}{[Code]}
@@ -463,11 +467,11 @@
             \item \href{https://www.jmlr.org/papers/v24/22-0809.html}{Merlion: End-to-End Machine Learning for Time Series.} JMLR, 2023.
             \item \href{https://proceedings.mlr.press/v236/feigenbaum24a.html}{Causal Layering via Conditional Entropy.} PMLR, 2024.
             \item \href{https://arxiv.org/abs/2301.10859}{Salesforce CausalAI Library: A Fast and Scalable Framework for Causal Analysis of Time Series and Tabular Data.} arXiv, 2023.
-            \item \href{https://arxiv.org/abs/2303.05628}{On the Unlikelihood of D-Separation.} arXiv, 2023.            
+            \item \href{https://arxiv.org/abs/2303.05628}{On the Unlikelihood of D-Separation.} arXiv, 2023.
             \item \href{https://arxiv.org/pdf/2401.07526}{Editing Arbitrary Propositions in LLMs without Subject Label.} arXiv, 2024.
         \end{highlightsforbulletentries}
     \end{onecolentry}
-    
+
     \vspace{0.08 cm}
 
     \begin{onecolentry}
@@ -570,7 +574,7 @@
         \textbf{Dialog and Conversation Systems}
         \begin{highlightsforbulletentries}
             \item \href{https://github.com/salesforce/Converse}{Converse}: A framework for conversational AI applications.
-            \item \href{https://github.com/salesforce/DialogStudio}{DialogStudio}: A comprehensive dialogue understanding benchmark and toolkit.            
+            \item \href{https://github.com/salesforce/DialogStudio}{DialogStudio}: A comprehensive dialogue understanding benchmark and toolkit.
         \end{highlightsforbulletentries}
     \end{onecolentry}
 
